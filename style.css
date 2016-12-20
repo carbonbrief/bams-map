@@ -56,6 +56,28 @@ h1 {
 	padding-right: 5px;
 }
 
+#circle-1 {
+      width: 12px;
+      height: 12px;
+      -webkit-border-radius: 25px;
+      -moz-border-radius: 25px;
+      border-radius: 25px;
+      background: orange;
+			display: inline-block;
+			margin-right: 5px;
+    }
+		
+#circle-2 {
+      width: 12px;
+      height: 12px;
+      -webkit-border-radius: 25px;
+      -moz-border-radius: 25px;
+      border-radius: 25px;
+      background: gray;
+			display: inline-block;
+			margin-right: 5px;
+    }
+
 .material-switch > input[type="checkbox"] {
     display: none;   
 }

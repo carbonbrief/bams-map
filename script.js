@@ -188,7 +188,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/rospearce/ciwgju4yv00cy2pmqeggx1mx
 	         naturalCold.addTo(mymap);
 					 naturalRain.addTo(mymap);
 	         
-	         $("#natural").click(function() {
+	         $("#natural-button").click(function() {
 	             mymap.addLayer(naturalCold)
 						   mymap.addLayer(naturalRain)
 	             mymap.removeLayer(humanImpactHeat)
@@ -198,7 +198,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/rospearce/ciwgju4yv00cy2pmqeggx1mx
 						   mymap.removeLayer(humanImpactStorm)
 						   mymap.removeLayer(humanImpactRain)
 	         });
-	         $("#humanImpact").click(function() {
+	         $("#human-button").click(function() {
 	             mymap.addLayer(humanImpactHeat)
 						   mymap.addLayer(humanImpactCold)
 						   mymap.addLayer(humanImpactDry)
@@ -208,7 +208,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/rospearce/ciwgju4yv00cy2pmqeggx1mx
 	             mymap.removeLayer(naturalCold)
 						   mymap.removeLayer(naturalRain)
 	         });
-	         $("#allstudies").click(function() {
+	         $("#all-button").click(function() {
 	             mymap.addLayer(humanImpactHeat)
 						   mymap.addLayer(humanImpactCold)
 						   mymap.addLayer(humanImpactDry)
