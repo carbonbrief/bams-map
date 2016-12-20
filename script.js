@@ -187,7 +187,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/rospearce/ciwgju4yv00cy2pmqeggx1mx
 					 humanImpactRain.addTo(mymap);
 	         naturalCold.addTo(mymap);
 					 naturalRain.addTo(mymap);
-	         // The JavaScript below is new
+	         
 	         $("#natural").click(function() {
 	             mymap.addLayer(naturalCold)
 						   mymap.addLayer(naturalRain)
@@ -218,7 +218,69 @@ L.tileLayer('https://api.mapbox.com/styles/v1/rospearce/ciwgju4yv00cy2pmqeggx1mx
 	             mymap.addLayer(naturalCold)
 						   mymap.addLayer(naturalRain)
 	         });
-	     });
+					 
+					 $('#heat-checkbox').change(function() {
+					     if (this.checked)
+					       mymap.addLayer(humanImpactHeat);
+					     else
+					       mymap.removeLayer(humanImpactHeat);
+					 });
+			 
+					 $('#cold-checkbox').change(function() {
+					     if (this.checked) {
+					       mymap.addLayer(humanImpactCold);
+							   mymap.addLayer(naturalCold);
+							 }
+					     else {
+					       mymap.removeLayer(humanImpactCold);
+							   mymap.removeLayer(naturalCold);
+							 }
+					 });
+					 
+					 $('#dry-checkbox').change(function() {
+					     if (this.checked) {
+					       mymap.addLayer(humanImpactDry);
+							   mymap.addLayer(naturalDry);
+							 }
+					     else {
+					       mymap.removeLayer(humanImpactDry);
+							   mymap.removeLayer(naturalDry);
+							 }
+					 });
+					 
+					 $('#rain-checkbox').change(function() {
+					     if (this.checked) {
+					       mymap.addLayer(humanImpactRain);
+							   mymap.addLayer(naturalRain);
+							 }
+					     else {
+					       mymap.removeLayer(humanImpactRain);
+							   mymap.removeLayer(naturalRain);
+							 }
+					 });
+					 
+					 $('#storm-checkbox').change(function() {
+					     if (this.checked) {
+					       mymap.addLayer(humanImpactStorm);
+							   mymap.addLayer(naturalStorm);
+							 }
+					     else {
+					       mymap.removeLayer(humanImpactStorm);
+							   mymap.removeLayer(naturalStorm);
+							 }
+					 });
+					 
+					 $('#fire-checkbox').change(function() {
+					     if (this.checked) {
+					       mymap.addLayer(humanImpactFire);
+							   mymap.addLayer(naturalFire);
+							 }
+					     else {
+					       mymap.removeLayer(humanImpactFire);
+							   mymap.removeLayer(naturalFire);
+							 }
+					 });
+		   });
 			 
 	 		function onEachFeature(feature, layer) {
 	 		    // does this feature have a property named popupContent?
@@ -228,6 +290,14 @@ L.tileLayer('https://api.mapbox.com/styles/v1/rospearce/ciwgju4yv00cy2pmqeggx1mx
 	 		                layer.on('mouseout', function() { layer.closePopup(); });
 	 		    };
 	 		}
+			
+			$( document ).ready( function(){
+			    var checkboxes = $( ':checkbox' );
+
+			    // Check all checkboxes
+			    checkboxes.prop( 'checked', true );
+					
+			});
 
 
 

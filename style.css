@@ -43,7 +43,7 @@ h1 {
 
 #logo {
 		position: absolute;
-	    	top: 722px;
+	    	top: 752px;
 	    	right: 7px;
 	    	z-index: 9000;
 		height: 30px;
@@ -101,3 +101,11 @@ h1 {
     left: 20px;
 }
 
+@media (max-width: 1200px) {
+	#map-wrapper {
+		width: 75%;
+	}
+	#key {
+		width: 25%;
+	}
+}
