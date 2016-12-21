@@ -344,7 +344,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/rospearce/ciwgju4yv00cy2pmqeggx1mx
 	 		function onEachFeature(feature, layer) {
 	 		    // does this feature have a property named popupContent?
 	 		    if (feature.properties) {
-	 		        layer.bindPopup('<h1>'+feature.properties.authors+'</h1>Type: <b>'+feature.properties.type+'</b><br />Location <b>'+feature.properties.location+'</b><br />Human impact? <b>'+feature.properties.impact+'</b><br />Summary: <b>'+feature.properties.summary+'</b>', {closeButton: false, offset: L.point(0, -20)});
+	 		        layer.bindPopup('<h1>'+feature.properties.authors+'</h1>Type: <b>'+feature.properties.type+'</b><br />Location: <b>'+feature.properties.location+'</b><br />Human impact? <b>'+feature.properties.impact+'</b><br />Summary: <b>'+feature.properties.summary+'</b>', {closeButton: false, offset: L.point(0, -20)});
 	 		                layer.on('mouseover', function() { layer.openPopup(); });
 	 		                layer.on('mouseout', function() { layer.closePopup(); });
 	 		    };
