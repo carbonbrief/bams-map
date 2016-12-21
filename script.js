@@ -188,97 +188,156 @@ L.tileLayer('https://api.mapbox.com/styles/v1/rospearce/ciwgju4yv00cy2pmqeggx1mx
 	         naturalCold.addTo(mymap);
 					 naturalRain.addTo(mymap);
 	         
-	         $("#natural-button").click(function() {
+	         $("#natural-checkbox").change(function() {
+						 if (this.checked) {
 	             mymap.addLayer(naturalCold)
 						   mymap.addLayer(naturalRain)
+						 }
+						 else {
+	             mymap.removeLayer(naturalCold)
+						   mymap.removeLayer(naturalRain)
+						 }
+	         });
+					 
+	         $("#human-checkbox").change(function() {
+						 if (this.checked) {
+	             mymap.addLayer(humanImpactHeat)
+						   mymap.addLayer(humanImpactCold)
+						   mymap.addLayer(humanImpactDry)
+						   mymap.addLayer(humanImpactFire)
+						   mymap.addLayer(humanImpactStorm)
+						   mymap.addLayer(humanImpactRain)
+						 }
+						 else {
 	             mymap.removeLayer(humanImpactHeat)
 						   mymap.removeLayer(humanImpactCold)
 						   mymap.removeLayer(humanImpactDry)
 						   mymap.removeLayer(humanImpactFire)
 						   mymap.removeLayer(humanImpactStorm)
 						   mymap.removeLayer(humanImpactRain)
-	         });
-	         $("#human-button").click(function() {
-	             mymap.addLayer(humanImpactHeat)
-						   mymap.addLayer(humanImpactCold)
-						   mymap.addLayer(humanImpactDry)
-						   mymap.addLayer(humanImpactFire)
-						   mymap.addLayer(humanImpactStorm)
-						   mymap.addLayer(humanImpactRain)
-	             mymap.removeLayer(naturalCold)
-						   mymap.removeLayer(naturalRain)
-	         });
-	         $("#all-button").click(function() {
-	             mymap.addLayer(humanImpactHeat)
-						   mymap.addLayer(humanImpactCold)
-						   mymap.addLayer(humanImpactDry)
-						   mymap.addLayer(humanImpactFire)
-						   mymap.addLayer(humanImpactStorm)
-						   mymap.addLayer(humanImpactRain)
-	             mymap.addLayer(naturalCold)
-						   mymap.addLayer(naturalRain)
+						 }
+
 	         });
 					 
 					 $('#heat-checkbox').change(function() {
-					     if (this.checked)
-					       mymap.addLayer(humanImpactHeat);
-					     else
-					       mymap.removeLayer(humanImpactHeat);
+	 				    if (this.checked && $('#human-checkbox').is(':checked') && !$('#natural-checkbox').is(':checked')) {
+	 				       mymap.addLayer(humanImpactHeat);
+	 						 }
+	 						 else if (this.checked && $('#natural-checkbox').is(':checked') && !$('#human-checkbox').is(':checked')) {
+	 						// 	 mymap.addLayer(naturalHeat);
+	 						 }
+	 						 else if (this.checked && $('#natural-checkbox').is(':checked') && $('#human-checkbox').is(':checked')) {
+	 						// 	 mymap.addLayer(naturalHeat);
+	 							 mymap.addLayer(humanImpactHeat);
+	 						 }
+	 						 else if (this.checked && !$('#natural-checkbox').is(':checked') && !$('#human-checkbox').is(':checked')) {
+	 						//do nothing
+	 						 }
+	 				     else {
+	 				       mymap.removeLayer(humanImpactHeat);
+	 						//	 mymap.removeLayer(naturalHeat);
+	 						}
 					 });
 			 
 					 $('#cold-checkbox').change(function() {
-					     if (this.checked) {
+					    if (this.checked && $('#human-checkbox').is(':checked') && !$('#natural-checkbox').is(':checked')) {
 					       mymap.addLayer(humanImpactCold);
-							   mymap.addLayer(naturalCold);
+							 }
+							 else if (this.checked && $('#natural-checkbox').is(':checked') && !$('#human-checkbox').is(':checked')) {
+							 	 mymap.addLayer(naturalCold);
+							 }
+							 else if (this.checked && $('#natural-checkbox').is(':checked') && $('#human-checkbox').is(':checked')) {
+							 	 mymap.addLayer(naturalCold);
+								 mymap.addLayer(humanImpactCold);
+							 }
+							 else if (this.checked && !$('#natural-checkbox').is(':checked') && !$('#human-checkbox').is(':checked')) {
+							 	 //do nothing
 							 }
 					     else {
 					       mymap.removeLayer(humanImpactCold);
-							   mymap.removeLayer(naturalCold);
-							 }
+								 mymap.removeLayer(naturalCold);
+							}
+							 
 					 });
 					 
 					 $('#dry-checkbox').change(function() {
-					     if (this.checked) {
-					       mymap.addLayer(humanImpactDry);
-							   mymap.addLayer(naturalDry);
-							 }
-					     else {
-					       mymap.removeLayer(humanImpactDry);
-							   mymap.removeLayer(naturalDry);
-							 }
+				    if (this.checked && $('#human-checkbox').is(':checked') && !$('#natural-checkbox').is(':checked')) {
+				       mymap.addLayer(humanImpactDry);
+						 }
+						 else if (this.checked && $('#natural-checkbox').is(':checked') && !$('#human-checkbox').is(':checked')) {
+						// 	 mymap.addLayer(naturalDry);
+						 }
+						 else if (this.checked && $('#natural-checkbox').is(':checked') && $('#human-checkbox').is(':checked')) {
+						// 	 mymap.addLayer(naturalDry);
+							 mymap.addLayer(humanImpactDry);
+						 }
+						 else if (this.checked && !$('#natural-checkbox').is(':checked') && !$('#human-checkbox').is(':checked')) {
+						//do nothing
+						 }
+				     else {
+				       mymap.removeLayer(humanImpactDry);
+						//	 mymap.removeLayer(naturalDry);
+						}
 					 });
 					 
 					 $('#rain-checkbox').change(function() {
-					     if (this.checked) {
-					       mymap.addLayer(humanImpactRain);
-							   mymap.addLayer(naturalRain);
-							 }
-					     else {
-					       mymap.removeLayer(humanImpactRain);
-							   mymap.removeLayer(naturalRain);
-							 }
+ 				    if (this.checked && $('#human-checkbox').is(':checked') && !$('#natural-checkbox').is(':checked')) {
+ 				       mymap.addLayer(humanImpactRain);
+ 						 }
+ 						 else if (this.checked && $('#natural-checkbox').is(':checked') && !$('#human-checkbox').is(':checked')) {
+ 						 	 mymap.addLayer(naturalRain);
+ 						 }
+ 						 else if (this.checked && $('#natural-checkbox').is(':checked') && $('#human-checkbox').is(':checked')) {
+ 						 	 mymap.addLayer(naturalRain);
+ 							 mymap.addLayer(humanImpactRain);
+ 						 }
+ 						 else if (this.checked && !$('#natural-checkbox').is(':checked') && !$('#human-checkbox').is(':checked')) {
+							 //do nothing
+ 						 }
+ 				     else {
+ 				       mymap.removeLayer(humanImpactRain);
+ 							 mymap.removeLayer(naturalRain);
+ 						}
 					 });
 					 
 					 $('#storm-checkbox').change(function() {
-					     if (this.checked) {
-					       mymap.addLayer(humanImpactStorm);
-							   mymap.addLayer(naturalStorm);
-							 }
-					     else {
-					       mymap.removeLayer(humanImpactStorm);
-							   mymap.removeLayer(naturalStorm);
-							 }
+ 				    if (this.checked && $('#human-checkbox').is(':checked') && !$('#natural-checkbox').is(':checked')) {
+ 				       mymap.addLayer(humanImpactStorm);
+ 						 }
+ 						 else if (this.checked && $('#natural-checkbox').is(':checked') && !$('#human-checkbox').is(':checked')) {
+ 						// 	 mymap.addLayer(naturalStorm);
+ 						 }
+ 						 else if (this.checked && $('#natural-checkbox').is(':checked') && $('#human-checkbox').is(':checked')) {
+ 						// 	 mymap.addLayer(naturalStorm);
+ 							 mymap.addLayer(humanImpactStorm);
+ 						 }
+ 						 else if (this.checked && !$('#natural-checkbox').is(':checked') && !$('#human-checkbox').is(':checked')) {
+ 						// 	 do nothing
+ 						 }
+ 				     else {
+ 				       mymap.removeLayer(humanImpactStorm);
+ 						//	 mymap.removeLayer(naturalStorm);
+ 						}
 					 });
 					 
 					 $('#fire-checkbox').change(function() {
-					     if (this.checked) {
-					       mymap.addLayer(humanImpactFire);
-							   mymap.addLayer(naturalFire);
-							 }
-					     else {
-					       mymap.removeLayer(humanImpactFire);
-							   mymap.removeLayer(naturalFire);
-							 }
+ 				    if (this.checked && $('#human-checkbox').is(':checked') && !$('#natural-checkbox').is(':checked')) {
+ 				       mymap.addLayer(humanImpactFire);
+ 						 }
+ 						 else if (this.checked && $('#natural-checkbox').is(':checked') && !$('#human-checkbox').is(':checked')) {
+ 						// 	 mymap.addLayer(naturalFire);
+ 						 }
+ 						 else if (this.checked && $('#natural-checkbox').is(':checked') && $('#human-checkbox').is(':checked')) {
+ 						// 	 mymap.addLayer(naturalFire);
+ 							 mymap.addLayer(humanImpactFire);
+ 						 }
+ 						 else if (this.checked && !$('#natural-checkbox').is(':checked') && !$('#human-checkbox').is(':checked')) {
+ 						// 	 do nothing
+ 						 }
+ 				     else {
+ 				       mymap.removeLayer(humanImpactFire);
+ 						//	 mymap.removeLayer(naturalFire);
+ 						}
 					 });
 		   });
 			 
