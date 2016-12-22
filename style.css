@@ -52,7 +52,7 @@ p {
 	background-color: #FFFFFF;
 }
 
-#hamburger:focus {
+#hamburger:visited {
 	outline-style: none;
 }
 
