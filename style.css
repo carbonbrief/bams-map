@@ -45,11 +45,12 @@ p {
 #hamburger {
 	top: 10px;
 	align-content: center;
-	width: 38px;
+	width: 36px;
+	border-radius: 2px;
 }
 
 #hamburger i {
-	padding-right: 20px;
+	padding-right: 16px;
 }
 
 #logo {
