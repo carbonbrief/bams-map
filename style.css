@@ -38,6 +38,20 @@ p {
 	background-color: #f3f3f3;
 }
 
+#hamburger-wrapper {
+	display: inline-block;
+}
+
+#hamburger {
+	top: 10px;
+	align-content: center;
+	width: 38px;
+}
+
+#hamburger i {
+	padding-right: 20px;
+}
+
 #logo {
 		position: absolute;
 	    	top: 752px;
@@ -127,4 +141,51 @@ p {
 	#key {
 		width: 25%;
 	}
+}
+
+@media (max-width: 800px) {
+	#map-wrapper {
+		width: 100%;
+	}
+	#key {
+		width: 0%;
+	}
+	#hamburger {
+		position: fixed;
+		right: 8px;
+		top: 8px;
+		display: inline;
+	}
+	#filter-wrapper {
+		visibility: hidden;
+	}
+}
+
+@media (min-width: 801px) {
+	#hamburger {
+		display: none;
+	}
+}
+
+#key.uncollapse {
+	width: 75%;
+}
+
+#hamburger.uncollapse {
+	display: inline-block;
+	position: relative;
+	left: 10px;
+}
+
+#hamburger-wrapper.uncollapse {
+	position: static;
+	height: 40px;
+}
+
+#filter-wrapper.uncollapse {
+	visibility: visible;
+}
+
+#map-wrapper.uncollapse {
+	width: 25%;
 }

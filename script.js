@@ -350,6 +350,26 @@ L.tileLayer('https://api.mapbox.com/styles/v1/rospearce/ciwgju4yv00cy2pmqeggx1mx
 	 		    };
 	 		}
 			
+			$('#hamburger').on('click', function(e) {
+				$('#key').toggleClass('uncollapse');
+				$('#map-wrapper').toggleClass('uncollapse');
+				$('#filter-wrapper').toggleClass('uncollapse');
+				$('#hamburger').toggleClass('uncollapse');
+				$('#hamburger-wrapper').toggleClass('uncollapse');
+				e.preventDefault();
+			});
+			
+			jQuery(function($){
+			var windowWidth = $(window).width();
+
+			$(window).resize(function() {
+			    if(windowWidth != $(window).width()){
+			    location.reload();
+			    return;
+			    }
+			});
+			});
+			
 			$( document ).ready( function(){
 			    var checkboxes = $( ':checkbox' );
 
