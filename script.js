@@ -359,7 +359,7 @@ promise.then(function(data) {
 				mymap.addLayer(humanImpactFire)
 				mymap.addLayer(humanImpactStorm)
 				mymap.addLayer(humanImpactRain)
-				mymap.addLayer(humanImpactOceans)
+				mymap.addLayer(humanImpactOcean)
 				}
 				else {
 				mymap.removeLayer(humanImpactHeat)
@@ -368,7 +368,7 @@ promise.then(function(data) {
 				mymap.removeLayer(humanImpactFire)
 				mymap.removeLayer(humanImpactStorm)
 				mymap.removeLayer(humanImpactRain)
-				mymap.addLayer(humanImpactOceans)
+				mymap.removeLayer(humanImpactOcean)
 				}
 
 	});
@@ -391,23 +391,40 @@ promise.then(function(data) {
 	});
 						
 	$('#heat-checkbox').change(function() {
-	if (this.checked && $('#human-checkbox').is(':checked') && !$('#natural-checkbox').is(':checked')) {
-		mymap.addLayer(humanImpactHeat);
-			}
-			else if (this.checked && $('#natural-checkbox').is(':checked') && !$('#human-checkbox').is(':checked')) {
-		// 	 mymap.addLayer(naturalHeat);
-			}
-			else if (this.checked && $('#natural-checkbox').is(':checked') && $('#human-checkbox').is(':checked')) {
-		// 	 mymap.addLayer(naturalHeat);
+			if (this.checked && $('#human-checkbox').is(':checked') && !$('#natural-checkbox').is(':checked') && !$('#unknown-checkbox').is(':checked')) {
 				mymap.addLayer(humanImpactHeat);
 			}
-			else if (this.checked && !$('#natural-checkbox').is(':checked') && !$('#human-checkbox').is(':checked')) {
+			else if (this.checked && $('#human-checkbox').is(':checked') && !$('#natural-checkbox').is(':checked') && $('#unknown-checkbox').is(':checked')) {
+				mymap.addLayer(humanImpactHeat);
+				mymap.addLayer(unknownHeat);
+			}
+			else if (this.checked && $('#natural-checkbox').is(':checked') && !$('#human-checkbox').is(':checked') && !$('#unknown-checkbox').is(':checked')) {
+				mymap.addLayer(naturalHeat);
+			}
+			else if (this.checked && $('#natural-checkbox').is(':checked') && !$('#human-checkbox').is(':checked') && $('#unknown-checkbox').is(':checked')) {
+				mymap.addLayer(naturalHeat);
+				mymap.addLayer(unknownHeat);
+			}
+			else if (this.checked && $('#natural-checkbox').is(':checked') && $('#human-checkbox').is(':checked') && !$('#unknown-checkbox').is(':checked')) {
+				mymap.addLayer(naturalHeat);
+				mymap.addLayer(humanImpactHeat);
+			}
+			else if (this.checked && $('#natural-checkbox').is(':checked') && $('#human-checkbox').is(':checked') && $('#unknown-checkbox').is(':checked')) {
+				mymap.addLayer(naturalHeat);
+				mymap.addLayer(humanImpactHeat);
+				mymap.addLayer(unknownHeat);
+			}
+			else if (this.checked && !$('#natural-checkbox').is(':checked') && !$('#human-checkbox').is(':checked') && $('#unknown-checkbox').is(':checked')) {
+				mymap.addLayer(unknownHeat);
+			}
+			else if (this.checked && !$('#natural-checkbox').is(':checked') && !$('#human-checkbox').is(':checked') && !$('#unknown-checkbox').is(':checked')) {
 		//do nothing
 			}
-		else {
-		mymap.removeLayer(humanImpactHeat);
-		//	 mymap.removeLayer(naturalHeat);
-		}
+			else {
+				mymap.removeLayer(humanImpactHeat);
+				mymap.removeLayer(naturalHeat);
+				mymap.removeLayer(unknownHeat);
+			}
 	});
 				
 	$('#cold-checkbox').change(function() {
@@ -425,8 +442,9 @@ promise.then(function(data) {
 				//do nothing
 			}
 		else {
-		mymap.removeLayer(humanImpactCold);
-				mymap.removeLayer(naturalCold);
+			mymap.removeLayer(humanImpactCold);
+			mymap.removeLayer(naturalCold);
+			mymap.removeLayer(unknownCold);
 		}
 			
 	});
