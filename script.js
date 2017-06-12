@@ -28,6 +28,12 @@ L.tileLayer('https://api.mapbox.com/styles/v1/rospearce/ciwgju4yv00cy2pmqeggx1mx
 				prefix: 'fa',
 				markerColor: 'blue'
 		    });
+
+		var naturalHotIcon = L.AwesomeMarkers.icon({
+				icon: 'thermometer-full',  
+				prefix: 'fa',
+				markerColor: 'blue'
+			});
 				
 		var naturalRainIcon = L.AwesomeMarkers.icon({
 				icon: 'tint',  
@@ -81,26 +87,49 @@ L.tileLayer('https://api.mapbox.com/styles/v1/rospearce/ciwgju4yv00cy2pmqeggx1mx
 			icon: 'ship',
 			prefix: 'fa',
 			markerColor: 'orange'
-		});	
-																			
+		});
+
+		var unknownColdIcon = L.AwesomeMarkers.icon({
+				icon: 'snowflake-o',  
+				prefix: 'fa',
+				markerColor: 'gray'
+		    });
+
+		var unknownStormIcon = L.AwesomeMarkers.icon({
+				icon: 'bolt',  
+				prefix: 'fa',
+				markerColor: 'gray'
+		    });		
+
+		var unknownRainIcon = L.AwesomeMarkers.icon({
+				icon: 'tint',  
+				prefix: 'fa',
+				markerColor: 'gray'
+			});	
+
+		var unknownDryIcon = L.AwesomeMarkers.icon({
+				icon: 'sun-o',  
+				prefix: 'fa',
+				markerColor: 'gray'
+			});																	
 			
 		
 var promise = $.getJSON("bams.geojson");
 promise.then(function(data) {
 				 
-		var allStudies = L.geoJson(data);
+	var allStudies = L.geoJson(data);
 						
-			var humanImpactHeat = L.geoJson(data, {
-				filter: function(feature, layer) {
-					return (feature.properties.impact == "Yes" && (feature.properties.type == "Heat"));
-				},
-				pointToLayer: function(feature, latlng) {
-					return L.marker(latlng, {
-						icon: humanHotIcon
-					}).on('click', onClick);
-				},
-							onEachFeature: onEachFeature
-			});
+	var humanImpactHeat = L.geoJson(data, {
+		filter: function(feature, layer) {
+			return (feature.properties.impact == "Yes" && (feature.properties.type == "Heat"));
+		},
+		pointToLayer: function(feature, latlng) {
+			return L.marker(latlng, {
+				icon: humanHotIcon
+			}).on('click', onClick);
+		},
+					onEachFeature: onEachFeature
+	});
 						
 	var humanImpactCold = L.geoJson(data, {
 	filter: function(feature, layer) {
@@ -185,6 +214,18 @@ promise.then(function(data) {
 			},
 						onEachFeature: onEachFeature 
 	});
+
+	var naturalHeat = L.geoJson(data, {
+		filter: function(feature, layer) {
+			return (feature.properties.impact == "No" && (feature.properties.type == "Heat"));
+		},
+		pointToLayer: function(feature, latlng) {
+			return L.marker(latlng, {
+				icon: naturalHotIcon
+			}).on('click', onClick);
+		},
+					onEachFeature: onEachFeature
+	});
 									
 	var naturalRain = L.geoJson(data, {
 			filter: function(feature, layer) {
@@ -209,7 +250,55 @@ promise.then(function(data) {
 			},
 						onEachFeature: onEachFeature 
 	});
+
+	var unknownCold = L.geoJson(data, {
+			filter: function(feature, layer) {
+				return (feature.properties.impact == "Maybe" && (feature.properties.type == "Cold"|| feature.properties.type == "Snow and ice"));
+			},
+			pointToLayer: function(feature, latlng) {
+				return L.marker(latlng, {
+									icon: unknownColdIcon
+				}).on('click', onClick);
+			},
+						onEachFeature: onEachFeature 
+	});
+
+	var unknownDry = L.geoJson(data, {
+	filter: function(feature, layer) {
+		return (feature.properties.impact == "Maybe" && (feature.properties.type == "Drought"));
+	},
+	pointToLayer: function(feature, latlng) {
+		return L.marker(latlng, {
+			icon: unknownDryIcon
+		}).on('click', onClick);
+	},
+	onEachFeature: onEachFeature
+	});
 									
+	var unknownStorm = L.geoJson(data, {
+			filter: function(feature, layer) {
+				return (feature.properties.impact == "Maybe" && feature.properties.type == "Rain/flooding");
+			},
+			pointToLayer: function(feature, latlng) {
+				return L.marker(latlng, {
+									icon: unknownStormIcon
+				}).on('click', onClick);
+			},
+						onEachFeature: onEachFeature 
+	});
+
+	var unknownRain = L.geoJson(data, {
+			filter: function(feature, layer) {
+				return (feature.properties.impact == "Maybe" && feature.properties.type == "Rain/flooding");
+			},
+			pointToLayer: function(feature, latlng) {
+				return L.marker(latlng, {
+									icon: unknownRainIcon
+				}).on('click', onClick);
+			},
+						onEachFeature: onEachFeature 
+	});
+
 	humanImpactHeat.addTo(mymap);
 	humanImpactCold.addTo(mymap);
 	humanImpactDry.addTo(mymap);
@@ -220,6 +309,11 @@ promise.then(function(data) {
 	naturalCold.addTo(mymap);
 	naturalRain.addTo(mymap);
 	naturalStorm.addTo(mymap);
+	naturalHeat.addTo(mymap);
+	unknownCold.addTo(mymap);
+	unknownDry.addTo(mymap);
+	unknownStorm.addTo(mymap);
+	unknownRain.addTo(mymap);
 
 				
 	$("#natural-checkbox").change(function() {
