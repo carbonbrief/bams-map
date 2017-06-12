@@ -84,6 +84,17 @@ p {
       -webkit-border-radius: 25px;
       -moz-border-radius: 25px;
       border-radius: 25px;
+      background: #37a9db;
+			display: inline-block;
+			margin-right: 5px;
+    }
+
+#circle-3 {
+      width: 12px;
+      height: 12px;
+      -webkit-border-radius: 25px;
+      -moz-border-radius: 25px;
+      border-radius: 25px;
       background: gray;
 			display: inline-block;
 			margin-right: 5px;
