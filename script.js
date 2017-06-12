@@ -8,38 +8,31 @@ L.tileLayer('https://api.mapbox.com/styles/v1/rospearce/ciwgju4yv00cy2pmqeggx1mx
 }).addTo(mymap);
 
 		
-		
-	//	function getColor(d) {
-	//	    return d > 3000  ? '#C7432B' :
-	//	           d > 2500  ? '#AD4F46' :
-	//	           d > 2000   ? '#945C61' :
-	//	           d > 1500   ? '#7B697C' :
-	//	           d > 1000   ? '#617597' :
-	//						 d > 500   ? '#4882B2' :
-	//	                      '#2F8FCE';
-	//	}
 
-	//	function style(feature) {
-	//	    return {
-	//	        fillColor: getColor(feature.properties.change),
-	//	        weight: 1.4,
-	//	        opacity: 0.85,
-	//	        color: 'white',
-	//	        fillOpacity: 0.85,
-	//				  radius: 12,
-	//	    };
-	//	}
+		// attempt to change marker color based on data
+
+		// function getColor(d) {
+		// 	var colors = {Yes: "#dd8a3e", No: "#2f8fce", Maybe: "#999999"};
+		// 	console.log("color");
+		// 	return colors[d] || '#999999';
+		// }	
+
+		// function markerColor (feature) {
+		// 	return {
+		// 		fillColor: getColor(feature.properties.impact)
+		// 	};
+		// }
 		
 		var naturalColdIcon = L.AwesomeMarkers.icon({
 				icon: 'snowflake-o',  
 				prefix: 'fa',
-				markerColor: 'gray'
+				markerColor: 'blue'
 		    });
 				
 		var naturalRainIcon = L.AwesomeMarkers.icon({
 				icon: 'tint',  
 				prefix: 'fa',
-				markerColor: 'gray'
+				markerColor: 'blue'
 			});
 				
 		var humanColdIcon = L.AwesomeMarkers.icon({
@@ -76,7 +69,13 @@ L.tileLayer('https://api.mapbox.com/styles/v1/rospearce/ciwgju4yv00cy2pmqeggx1mx
 				icon: 'tint',  
 				prefix: 'fa',
 				markerColor: 'orange'
-			});		
+			});	
+
+		var humanOceanIcon = L.AwesomeMarkers.icon({
+			icon: 'ship',
+			prefix: 'fa',
+			markerColor: 'orange'
+		});	
 																			
 			
 		
@@ -87,79 +86,91 @@ promise.then(function(data) {
 						
 			var humanImpactHeat = L.geoJson(data, {
 				filter: function(feature, layer) {
-					return (feature.properties.impact == "Yes" && (feature.properties.type == "Heat" || feature.properties.type == "Heat & humidity" || feature.properties.type == "Snow pack drought"));
+					return (feature.properties.impact == "Yes" && (feature.properties.type == "Heat"));
 				},
 				pointToLayer: function(feature, latlng) {
 					return L.marker(latlng, {
 						icon: humanHotIcon
 					}).on('click', onClick);
 				},
-							onEachFeature: onEachFeature,
+							onEachFeature: onEachFeature
 			});
 						
 			var humanImpactCold = L.geoJson(data, {
 		filter: function(feature, layer) {
-			return (feature.properties.impact == "Yes" && (feature.properties.type == "Cold" || feature.properties.type == "Sea ice"));
+			return (feature.properties.impact == "Yes" && (feature.properties.type == "Cold" || feature.properties.type == "Snow and ice"));
 		},
 		pointToLayer: function(feature, latlng) {
 			return L.marker(latlng, {
 				icon: humanColdIcon
 			}).on('click', onClick);
 		},
-				onEachFeature: onEachFeature,
+				onEachFeature: onEachFeature
 	});
 		
 			var humanImpactDry = L.geoJson(data, {
 		filter: function(feature, layer) {
-			return (feature.properties.impact == "Yes" && (feature.properties.type == "Dryness" || feature.properties.type == "Drought" || feature.properties.type == "Sunshine"));
+			return (feature.properties.impact == "Yes" && (feature.properties.type == "Drought"));
 		},
 		pointToLayer: function(feature, latlng) {
 			return L.marker(latlng, {
 				icon: humanDryIcon
 			}).on('click', onClick);
 		},
-		onEachFeature: onEachFeature,
+		onEachFeature: onEachFeature
 	});
 
 	var humanImpactFire = L.geoJson(data, {
 		filter: function(feature, layer) {
-			return (feature.properties.impact == "Yes" && (feature.properties.type == "Wildfires"));
+			return (feature.properties.impact == "Yes" && (feature.properties.type == "Wildfire"));
 		},
 		pointToLayer: function(feature, latlng) {
 			return L.marker(latlng, {
 				icon: humanFireIcon
 			}).on('click', onClick);
 		},
-		onEachFeature: onEachFeature,
+		onEachFeature: onEachFeature
 	});
 
 	var humanImpactStorm = L.geoJson(data, {
 		filter: function(feature, layer) {
-			return (feature.properties.impact == "Yes" && (feature.properties.type == "Tropical cyclones"));
+			return (feature.properties.impact == "Yes" && (feature.properties.type == "Tropical cyclones" || feature.properties.type == "Storms" ));
 		},
 		pointToLayer: function(feature, latlng) {
 			return L.marker(latlng, {
 				icon: humanStormIcon
 			}).on('click', onClick);
 		},
-		onEachFeature: onEachFeature,
+		onEachFeature: onEachFeature
 	});
 
 	var humanImpactRain = L.geoJson(data, {
 		filter: function(feature, layer) {
-			return (feature.properties.impact == "Yes" && (feature.properties.type == "High tide floods" || feature.properties.type == "Heavy rainfall"));
+			return (feature.properties.impact == "Yes" && (feature.properties.type == "Rain/flooding"));
 		},
 		pointToLayer: function(feature, latlng) {
 			return L.marker(latlng, {
 				icon: humanRainIcon
 			}).on('click', onClick);
 		},
-		onEachFeature: onEachFeature,
+		onEachFeature: onEachFeature
+	});
+
+	var humanImpactOcean = L.geoJson(data, {
+		filter: function(feature, layer) {
+			return (feature.properties.impact == "Yes" && (feature.properties.type == "Oceans"));
+		},
+		pointToLayer: function(feature, latlng) {
+			return L.marker(latlng, {
+				icon: humanOceanIcon
+			}).on('click', onClick);
+		},
+		onEachFeature: onEachFeature
 	});
 						
 	var naturalCold = L.geoJson(data, {
 			filter: function(feature, layer) {
-				return (feature.properties.impact == "No" && feature.properties.type == "Cold");
+				return (feature.properties.impact == "No" && (feature.properties.type == "Cold"|| feature.properties.type == "Snow and ice"));
 			},
 			pointToLayer: function(feature, latlng) {
 				return L.marker(latlng, {
@@ -171,7 +182,7 @@ promise.then(function(data) {
 									
 	var naturalRain = L.geoJson(data, {
 			filter: function(feature, layer) {
-				return (feature.properties.impact == "No" && feature.properties.type == "Heavy rainfall");
+				return (feature.properties.impact == "No" && feature.properties.type == "Rain/flooding");
 			},
 			pointToLayer: function(feature, latlng) {
 				return L.marker(latlng, {
@@ -187,6 +198,7 @@ promise.then(function(data) {
 	humanImpactFire.addTo(mymap);
 	humanImpactStorm.addTo(mymap);
 	humanImpactRain.addTo(mymap);
+	humanImpactOcean.addTo(mymap);
 	naturalCold.addTo(mymap);
 	naturalRain.addTo(mymap);
 
@@ -365,6 +377,7 @@ function onEachFeature(feature, layer) {
 
 var zoomHome = L.Control.zoomHome();
 zoomHome.addTo(mymap);
+
 
 $('#hamburger').on('click', function(e) {
 	$('#key').toggleClass('uncollapse');
