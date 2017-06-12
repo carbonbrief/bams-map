@@ -34,6 +34,12 @@ L.tileLayer('https://api.mapbox.com/styles/v1/rospearce/ciwgju4yv00cy2pmqeggx1mx
 				prefix: 'fa',
 				markerColor: 'blue'
 			});
+
+		var naturalStormIcon = L.AwesomeMarkers.icon({
+				icon: 'bolt',  
+				prefix: 'fa',
+				markerColor: 'blue'
+			});
 				
 		var humanColdIcon = L.AwesomeMarkers.icon({
 				icon: 'snowflake-o',  
@@ -82,7 +88,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/rospearce/ciwgju4yv00cy2pmqeggx1mx
 var promise = $.getJSON("bams.geojson");
 promise.then(function(data) {
 				 
-			var allStudies = L.geoJson(data);
+		var allStudies = L.geoJson(data);
 						
 			var humanImpactHeat = L.geoJson(data, {
 				filter: function(feature, layer) {
@@ -96,28 +102,28 @@ promise.then(function(data) {
 							onEachFeature: onEachFeature
 			});
 						
-			var humanImpactCold = L.geoJson(data, {
-		filter: function(feature, layer) {
-			return (feature.properties.impact == "Yes" && (feature.properties.type == "Cold" || feature.properties.type == "Snow and ice"));
-		},
-		pointToLayer: function(feature, latlng) {
-			return L.marker(latlng, {
-				icon: humanColdIcon
-			}).on('click', onClick);
-		},
-				onEachFeature: onEachFeature
+	var humanImpactCold = L.geoJson(data, {
+	filter: function(feature, layer) {
+		return (feature.properties.impact == "Yes" && (feature.properties.type == "Cold" || feature.properties.type == "Snow and ice"));
+	},
+	pointToLayer: function(feature, latlng) {
+		return L.marker(latlng, {
+			icon: humanColdIcon
+		}).on('click', onClick);
+	},
+			onEachFeature: onEachFeature
 	});
 		
-			var humanImpactDry = L.geoJson(data, {
-		filter: function(feature, layer) {
-			return (feature.properties.impact == "Yes" && (feature.properties.type == "Drought"));
-		},
-		pointToLayer: function(feature, latlng) {
-			return L.marker(latlng, {
-				icon: humanDryIcon
-			}).on('click', onClick);
-		},
-		onEachFeature: onEachFeature
+	var humanImpactDry = L.geoJson(data, {
+	filter: function(feature, layer) {
+		return (feature.properties.impact == "Yes" && (feature.properties.type == "Drought"));
+	},
+	pointToLayer: function(feature, latlng) {
+		return L.marker(latlng, {
+			icon: humanDryIcon
+		}).on('click', onClick);
+	},
+	onEachFeature: onEachFeature
 	});
 
 	var humanImpactFire = L.geoJson(data, {
@@ -191,6 +197,18 @@ promise.then(function(data) {
 			},
 						onEachFeature: onEachFeature 
 	});
+
+	var naturalStorm = L.geoJson(data, {
+			filter: function(feature, layer) {
+				return (feature.properties.impact == "No" && feature.properties.type == "Rain/flooding");
+			},
+			pointToLayer: function(feature, latlng) {
+				return L.marker(latlng, {
+									icon: naturalStormIcon
+				}).on('click', onClick);
+			},
+						onEachFeature: onEachFeature 
+	});
 									
 	humanImpactHeat.addTo(mymap);
 	humanImpactCold.addTo(mymap);
@@ -201,6 +219,7 @@ promise.then(function(data) {
 	humanImpactOcean.addTo(mymap);
 	naturalCold.addTo(mymap);
 	naturalRain.addTo(mymap);
+	naturalStorm.addTo(mymap);
 
 				
 	$("#natural-checkbox").change(function() {
