@@ -104,7 +104,7 @@ promise.then(function(data) {
 		pointToLayer: function(feature, latlng) {
 			return L.marker(latlng, {
 				icon: humanColdIcon
-			});
+			}).on('click', onClick);
 		},
 				onEachFeature: onEachFeature,
 	});
@@ -116,7 +116,7 @@ promise.then(function(data) {
 		pointToLayer: function(feature, latlng) {
 			return L.marker(latlng, {
 				icon: humanDryIcon
-			});
+			}).on('click', onClick);
 		},
 		onEachFeature: onEachFeature,
 	});
@@ -128,7 +128,7 @@ promise.then(function(data) {
 		pointToLayer: function(feature, latlng) {
 			return L.marker(latlng, {
 				icon: humanFireIcon
-			});
+			}).on('click', onClick);
 		},
 		onEachFeature: onEachFeature,
 	});
@@ -140,7 +140,7 @@ promise.then(function(data) {
 		pointToLayer: function(feature, latlng) {
 			return L.marker(latlng, {
 				icon: humanStormIcon
-			});
+			}).on('click', onClick);
 		},
 		onEachFeature: onEachFeature,
 	});
@@ -152,7 +152,7 @@ promise.then(function(data) {
 		pointToLayer: function(feature, latlng) {
 			return L.marker(latlng, {
 				icon: humanRainIcon
-			});
+			}).on('click', onClick);
 		},
 		onEachFeature: onEachFeature,
 	});
@@ -164,7 +164,7 @@ promise.then(function(data) {
 			pointToLayer: function(feature, latlng) {
 				return L.marker(latlng, {
 									icon: naturalColdIcon
-				});
+				}).on('click', onClick);
 			},
 						onEachFeature: onEachFeature 
 	});
@@ -176,7 +176,7 @@ promise.then(function(data) {
 			pointToLayer: function(feature, latlng) {
 				return L.marker(latlng, {
 									icon: naturalRainIcon
-				});
+				}).on('click', onClick);
 			},
 						onEachFeature: onEachFeature 
 	});
@@ -344,6 +344,8 @@ promise.then(function(data) {
 		});
 });
 
+// add zoom on marker click
+
 function onClick(e) {
     mymap.setView(e.latlng, 4);
 	console.log("click-zoom");
@@ -358,6 +360,8 @@ function onEachFeature(feature, layer) {
 	};
 
 }
+
+//add zoomHome plugin
 
 var zoomHome = L.Control.zoomHome();
 zoomHome.addTo(mymap);
