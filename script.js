@@ -29,7 +29,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/rospearce/ciwgju4yv00cy2pmqeggx1mx
 				markerColor: 'blue'
 		    });
 
-		var naturalHotIcon = L.AwesomeMarkers.icon({
+		var naturalHeatIcon = L.AwesomeMarkers.icon({
 				icon: 'thermometer-full',  
 				prefix: 'fa',
 				markerColor: 'blue'
@@ -53,7 +53,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/rospearce/ciwgju4yv00cy2pmqeggx1mx
 				markerColor: 'orange'
 			});
 				
-		var humanHotIcon = L.AwesomeMarkers.icon({
+		var humanHeatIcon = L.AwesomeMarkers.icon({
 				icon: 'thermometer-full',  
 				prefix: 'fa',
 				markerColor: 'orange'
@@ -111,7 +111,13 @@ L.tileLayer('https://api.mapbox.com/styles/v1/rospearce/ciwgju4yv00cy2pmqeggx1mx
 				icon: 'sun-o',  
 				prefix: 'fa',
 				markerColor: 'gray'
-			});																	
+			});	
+
+		var unknownHeatIcon = L.AwesomeMarkers.icon({
+				icon: 'thermometer-full',  
+				prefix: 'fa',
+				markerColor: 'gray'
+			});																
 			
 		
 var promise = $.getJSON("bams.geojson");
@@ -125,7 +131,7 @@ promise.then(function(data) {
 		},
 		pointToLayer: function(feature, latlng) {
 			return L.marker(latlng, {
-				icon: humanHotIcon
+				icon: humanHeatIcon
 			}).on('click', onClick);
 		},
 					onEachFeature: onEachFeature
@@ -221,7 +227,7 @@ promise.then(function(data) {
 		},
 		pointToLayer: function(feature, latlng) {
 			return L.marker(latlng, {
-				icon: naturalHotIcon
+				icon: naturalHeatIcon
 			}).on('click', onClick);
 		},
 					onEachFeature: onEachFeature
@@ -299,13 +305,19 @@ promise.then(function(data) {
 						onEachFeature: onEachFeature 
 	});
 
-	humanImpactHeat.addTo(mymap);
-	humanImpactCold.addTo(mymap);
-	humanImpactDry.addTo(mymap);
-	humanImpactFire.addTo(mymap);
-	humanImpactStorm.addTo(mymap);
-	humanImpactRain.addTo(mymap);
-	humanImpactOcean.addTo(mymap);
+	var unknownHeat = L.geoJson(data, {
+		filter: function(feature, layer) {
+			return (feature.properties.impact == "Maybe" && (feature.properties.type == "Heat"));
+		},
+		pointToLayer: function(feature, latlng) {
+			return L.marker(latlng, {
+				icon: unknownHeatIcon
+			}).on('click', onClick);
+		},
+					onEachFeature: onEachFeature
+	});
+
+	
 	naturalCold.addTo(mymap);
 	naturalRain.addTo(mymap);
 	naturalStorm.addTo(mymap);
@@ -314,6 +326,14 @@ promise.then(function(data) {
 	unknownDry.addTo(mymap);
 	unknownStorm.addTo(mymap);
 	unknownRain.addTo(mymap);
+	unknownHeat.addTo(mymap);
+	humanImpactHeat.addTo(mymap);
+	humanImpactCold.addTo(mymap);
+	humanImpactDry.addTo(mymap);
+	humanImpactFire.addTo(mymap);
+	humanImpactStorm.addTo(mymap);
+	humanImpactRain.addTo(mymap);
+	humanImpactOcean.addTo(mymap);
 
 				
 	$("#natural-checkbox").change(function() {
@@ -479,7 +499,7 @@ function onClick(e) {
 function onEachFeature(feature, layer) {
 	// does this feature have a property named popupContent?
 	if (feature.properties) {
-		layer.bindPopup('<h1>'+feature.properties.authors+'</h1>Type: <b>'+feature.properties.type+'</b><br />Location: <b>'+feature.properties.location+'</b><br />Human impact? <b>'+feature.properties.impact+'</b><br />Summary: <b>'+feature.properties.summary+'</b>', {closeButton: false, offset: L.point(0, -20)});
+		layer.bindPopup('<h1>'+feature.properties.authors+'</h1>Type: <b>'+feature.properties.type+'</b><br />Location: <b>'+feature.properties.location+'</b><br />Impact: <b>'+feature.properties.impact_description+'</b><br />Summary: <b>'+feature.properties.summary+'</b>', {closeButton: false, offset: L.point(0, -20)});
 				layer.on('mouseover', function() { layer.openPopup(); });
 				layer.on('mouseout', function() { layer.closePopup(); });
 	};
