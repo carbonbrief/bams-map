@@ -2,7 +2,7 @@ var mymap = L.map('mapid', {zoomControl: false}).setView([31.505, 7], 2);
 
 L.tileLayer('https://api.mapbox.com/styles/v1/rospearce/ciwgju4yv00cy2pmqeggx1mx8/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoicm9zcGVhcmNlIiwiYSI6ImNpdm1sczJsZjAwOGMyeW1xNHc4ejJ0N28ifQ.4B24e0_HgfJj4sgqimETqA', {
     attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
-    maxZoom: 5,
+    maxZoom: 6,
     id: 'mapbox://styles/rospearce/ciwgju4yv00cy2pmqeggx1mx8',
     accessToken: 'pk.eyJ1Ijoicm9zcGVhcmNlIiwiYSI6ImNpdm1sczJsZjAwOGMyeW1xNHc4ejJ0N28ifQ.4B24e0_HgfJj4sgqimETqA'
 }).addTo(mymap);
@@ -36,47 +36,47 @@ L.tileLayer('https://api.mapbox.com/styles/v1/rospearce/ciwgju4yv00cy2pmqeggx1mx
 				markerColor: 'gray'
 		    });
 				
-				var naturalRainIcon = L.AwesomeMarkers.icon({
-						icon: 'tint',  
-						prefix: 'fa',
-						markerColor: 'gray'
-				    });
+		var naturalRainIcon = L.AwesomeMarkers.icon({
+				icon: 'tint',  
+				prefix: 'fa',
+				markerColor: 'gray'
+			});
 				
-				var humanColdIcon = L.AwesomeMarkers.icon({
-						icon: 'snowflake-o',  
-						prefix: 'fa',
-						markerColor: 'orange'
-				    });
+		var humanColdIcon = L.AwesomeMarkers.icon({
+				icon: 'snowflake-o',  
+				prefix: 'fa',
+				markerColor: 'orange'
+			});
 				
-				var humanHotIcon = L.AwesomeMarkers.icon({
-						icon: 'thermometer-full',  
-						prefix: 'fa',
-						markerColor: 'orange'
-				    });
+		var humanHotIcon = L.AwesomeMarkers.icon({
+				icon: 'thermometer-full',  
+				prefix: 'fa',
+				markerColor: 'orange'
+			});
 						
-						var humanDryIcon = L.AwesomeMarkers.icon({
-								icon: 'sun-o',  
-								prefix: 'fa',
-								markerColor: 'orange'
-						    });
+		var humanDryIcon = L.AwesomeMarkers.icon({
+				icon: 'sun-o',  
+				prefix: 'fa',
+				markerColor: 'orange'
+			});
 			
-								var humanFireIcon = L.AwesomeMarkers.icon({
-										icon: 'fire',  
-										prefix: 'glyphicon',
-										markerColor: 'orange'
-								    });
+		var humanFireIcon = L.AwesomeMarkers.icon({
+				icon: 'fire',  
+				prefix: 'glyphicon',
+				markerColor: 'orange'
+			});
 										
-										var humanStormIcon = L.AwesomeMarkers.icon({
-												icon: 'bolt',  
-												prefix: 'fa',
-												markerColor: 'orange'
-										    });
+		var humanStormIcon = L.AwesomeMarkers.icon({
+				icon: 'bolt',  
+				prefix: 'fa',
+				markerColor: 'orange'
+			});
 												
-												var humanRainIcon = L.AwesomeMarkers.icon({
-														icon: 'tint',  
-														prefix: 'fa',
-														markerColor: 'orange'
-												    });		
+		var humanRainIcon = L.AwesomeMarkers.icon({
+				icon: 'tint',  
+				prefix: 'fa',
+				markerColor: 'orange'
+			});		
 																			
 			
 		
