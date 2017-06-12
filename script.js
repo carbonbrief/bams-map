@@ -83,19 +83,19 @@ L.tileLayer('https://api.mapbox.com/styles/v1/rospearce/ciwgju4yv00cy2pmqeggx1mx
 var promise = $.getJSON("bams.geojson");
 promise.then(function(data) {
 				 
-				var allStudies = L.geoJson(data);
+			var allStudies = L.geoJson(data);
 						
-						var humanImpactHeat = L.geoJson(data, {
-					filter: function(feature, layer) {
-						return (feature.properties.impact == "Yes" && (feature.properties.type == "Heat" || feature.properties.type == "Heat & humidity" || feature.properties.type == "Snow pack drought"));
-					},
-					pointToLayer: function(feature, latlng) {
-						return L.marker(latlng, {
-							icon: humanHotIcon
-						});
-					},
-								onEachFeature: onEachFeature,
-				});
+			var humanImpactHeat = L.geoJson(data, {
+				filter: function(feature, layer) {
+					return (feature.properties.impact == "Yes" && (feature.properties.type == "Heat" || feature.properties.type == "Heat & humidity" || feature.properties.type == "Snow pack drought"));
+				},
+				pointToLayer: function(feature, latlng) {
+					return L.marker(latlng, {
+						icon: humanHotIcon
+					}).on('click', onClick);
+				},
+							onEachFeature: onEachFeature,
+			});
 						
 			var humanImpactCold = L.geoJson(data, {
 		filter: function(feature, layer) {
@@ -189,6 +189,7 @@ promise.then(function(data) {
 	humanImpactRain.addTo(mymap);
 	naturalCold.addTo(mymap);
 	naturalRain.addTo(mymap);
+
 				
 	$("#natural-checkbox").change(function() {
 				if (this.checked) {
@@ -342,6 +343,11 @@ promise.then(function(data) {
 			}
 		});
 });
+
+function onClick(e) {
+    mymap.setView(e.latlng, 5);
+	console.log("click-zoom");
+}
 			 
 function onEachFeature(feature, layer) {
 	// does this feature have a property named popupContent?
@@ -350,6 +356,7 @@ function onEachFeature(feature, layer) {
 				layer.on('mouseover', function() { layer.openPopup(); });
 				layer.on('mouseout', function() { layer.closePopup(); });
 	};
+
 }
 
 $('#hamburger').on('click', function(e) {
