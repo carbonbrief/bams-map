@@ -338,33 +338,56 @@ promise.then(function(data) {
 				
 	$("#natural-checkbox").change(function() {
 				if (this.checked) {
-		mymap.addLayer(naturalCold)
+				mymap.addLayer(naturalCold)
 				mymap.addLayer(naturalRain)
+				mymap.addLayer(naturalHeat)
+				mymap.addLayer(naturalStorm)
 				}
 				else {
-		mymap.removeLayer(naturalCold)
+				mymap.removeLayer(naturalCold)
 				mymap.removeLayer(naturalRain)
+				mymap.removeLayer(naturalHeat)
+				mymap.removeLayer(naturalStorm)
 				}
 	});
 						
 	$("#human-checkbox").change(function() {
 				if (this.checked) {
-		mymap.addLayer(humanImpactHeat)
+				mymap.addLayer(humanImpactHeat)
 				mymap.addLayer(humanImpactCold)
 				mymap.addLayer(humanImpactDry)
 				mymap.addLayer(humanImpactFire)
 				mymap.addLayer(humanImpactStorm)
 				mymap.addLayer(humanImpactRain)
+				mymap.addLayer(humanImpactOceans)
 				}
 				else {
-		mymap.removeLayer(humanImpactHeat)
+				mymap.removeLayer(humanImpactHeat)
 				mymap.removeLayer(humanImpactCold)
 				mymap.removeLayer(humanImpactDry)
 				mymap.removeLayer(humanImpactFire)
 				mymap.removeLayer(humanImpactStorm)
 				mymap.removeLayer(humanImpactRain)
+				mymap.addLayer(humanImpactOceans)
 				}
 
+	});
+
+	$("#unknown-checkbox").change(function() {
+				if (this.checked) {
+				mymap.addLayer(unknownCold)
+				mymap.addLayer(unknownRain)
+				mymap.addLayer(unknownHeat)
+				mymap.addLayer(unknownStorm)
+				mymap.addLayer(unknownDry)
+				}
+				else {
+				mymap.removeLayer(unknownCold)
+				mymap.removeLayer(unknownRain)
+				mymap.removeLayer(unknownHeat)
+				mymap.removeLayer(unknownStorm)
+				mymap.removeLayer(unknownDry)
+				}
 	});
 						
 	$('#heat-checkbox').change(function() {
