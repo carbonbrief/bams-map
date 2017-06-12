@@ -80,303 +80,305 @@ L.tileLayer('https://api.mapbox.com/styles/v1/rospearce/ciwgju4yv00cy2pmqeggx1mx
 																			
 			
 		
-	  var promise = $.getJSON("bams.geojson");
-	     promise.then(function(data) {
+var promise = $.getJSON("bams.geojson");
+promise.then(function(data) {
 				 
-	         var allStudies = L.geoJson(data);
-					 
-	                 var humanImpactHeat = L.geoJson(data, {
-	             filter: function(feature, layer) {
-	                 return (feature.properties.impact == "Yes" && (feature.properties.type == "Heat" || feature.properties.type == "Heat & humidity" || feature.properties.type == "Snow pack drought"));
-	             },
-	             pointToLayer: function(feature, latlng) {
-	                 return L.marker(latlng, {
-	                 	icon: humanHotIcon
-	                 });
-	             },
-							 onEachFeature: onEachFeature,
-	         });
-					 
-           var humanImpactCold = L.geoJson(data, {
-       filter: function(feature, layer) {
-           return (feature.properties.impact == "Yes" && (feature.properties.type == "Cold" || feature.properties.type == "Sea ice"));
-       },
-       pointToLayer: function(feature, latlng) {
-           return L.marker(latlng, {
-           	icon: humanColdIcon
-           });
-       },
-			 onEachFeature: onEachFeature,
-   });
-	 
-        var humanImpactDry = L.geoJson(data, {
-    filter: function(feature, layer) {
-        return (feature.properties.impact == "Yes" && (feature.properties.type == "Dryness" || feature.properties.type == "Drought" || feature.properties.type == "Sunshine"));
-    },
-    pointToLayer: function(feature, latlng) {
-        return L.marker(latlng, {
-        	icon: humanDryIcon
-        });
-    },
-	 onEachFeature: onEachFeature,
-});
+				var allStudies = L.geoJson(data);
+						
+						var humanImpactHeat = L.geoJson(data, {
+					filter: function(feature, layer) {
+						return (feature.properties.impact == "Yes" && (feature.properties.type == "Heat" || feature.properties.type == "Heat & humidity" || feature.properties.type == "Snow pack drought"));
+					},
+					pointToLayer: function(feature, latlng) {
+						return L.marker(latlng, {
+							icon: humanHotIcon
+						});
+					},
+								onEachFeature: onEachFeature,
+				});
+						
+			var humanImpactCold = L.geoJson(data, {
+		filter: function(feature, layer) {
+			return (feature.properties.impact == "Yes" && (feature.properties.type == "Cold" || feature.properties.type == "Sea ice"));
+		},
+		pointToLayer: function(feature, latlng) {
+			return L.marker(latlng, {
+				icon: humanColdIcon
+			});
+		},
+				onEachFeature: onEachFeature,
+	});
+		
+			var humanImpactDry = L.geoJson(data, {
+		filter: function(feature, layer) {
+			return (feature.properties.impact == "Yes" && (feature.properties.type == "Dryness" || feature.properties.type == "Drought" || feature.properties.type == "Sunshine"));
+		},
+		pointToLayer: function(feature, latlng) {
+			return L.marker(latlng, {
+				icon: humanDryIcon
+			});
+		},
+		onEachFeature: onEachFeature,
+	});
 
-        var humanImpactFire = L.geoJson(data, {
-    filter: function(feature, layer) {
-        return (feature.properties.impact == "Yes" && (feature.properties.type == "Wildfires"));
-    },
-    pointToLayer: function(feature, latlng) {
-        return L.marker(latlng, {
-        	icon: humanFireIcon
-        });
-    },
-	 onEachFeature: onEachFeature,
-});
+	var humanImpactFire = L.geoJson(data, {
+		filter: function(feature, layer) {
+			return (feature.properties.impact == "Yes" && (feature.properties.type == "Wildfires"));
+		},
+		pointToLayer: function(feature, latlng) {
+			return L.marker(latlng, {
+				icon: humanFireIcon
+			});
+		},
+		onEachFeature: onEachFeature,
+	});
 
-        var humanImpactStorm = L.geoJson(data, {
-    filter: function(feature, layer) {
-        return (feature.properties.impact == "Yes" && (feature.properties.type == "Tropical cyclones"));
-    },
-    pointToLayer: function(feature, latlng) {
-        return L.marker(latlng, {
-        	icon: humanStormIcon
-        });
-    },
-	 onEachFeature: onEachFeature,
-});
+	var humanImpactStorm = L.geoJson(data, {
+		filter: function(feature, layer) {
+			return (feature.properties.impact == "Yes" && (feature.properties.type == "Tropical cyclones"));
+		},
+		pointToLayer: function(feature, latlng) {
+			return L.marker(latlng, {
+				icon: humanStormIcon
+			});
+		},
+		onEachFeature: onEachFeature,
+	});
 
-        var humanImpactRain = L.geoJson(data, {
-    filter: function(feature, layer) {
-        return (feature.properties.impact == "Yes" && (feature.properties.type == "High tide floods" || feature.properties.type == "Heavy rainfall"));
-    },
-    pointToLayer: function(feature, latlng) {
-        return L.marker(latlng, {
-        	icon: humanRainIcon
-        });
-    },
-	 onEachFeature: onEachFeature,
-});
-					 
-	         var naturalCold = L.geoJson(data, {
-	             filter: function(feature, layer) {
-	                 return (feature.properties.impact == "No" && feature.properties.type == "Cold");
-	             },
-	             pointToLayer: function(feature, latlng) {
-	                 return L.marker(latlng, {
-										 icon: naturalColdIcon
-	                 });
-	             },
-							  onEachFeature: onEachFeature });
-								
-		 	         var naturalRain = L.geoJson(data, {
-		 	             filter: function(feature, layer) {
-		 	                 return (feature.properties.impact == "No" && feature.properties.type == "Heavy rainfall");
-		 	             },
-		 	             pointToLayer: function(feature, latlng) {
-		 	                 return L.marker(latlng, {
-		 										 icon: naturalRainIcon
-		 	                 });
-		 	             },
-		 							  onEachFeature: onEachFeature });
-								
-	         humanImpactHeat.addTo(mymap);
-					 humanImpactCold.addTo(mymap);
-					 humanImpactDry.addTo(mymap);
-					 humanImpactFire.addTo(mymap);
-					 humanImpactStorm.addTo(mymap);
-					 humanImpactRain.addTo(mymap);
-	         naturalCold.addTo(mymap);
-					 naturalRain.addTo(mymap);
-	         
-	         $("#natural-checkbox").change(function() {
-						 if (this.checked) {
-	             mymap.addLayer(naturalCold)
-						   mymap.addLayer(naturalRain)
-						 }
-						 else {
-	             mymap.removeLayer(naturalCold)
-						   mymap.removeLayer(naturalRain)
-						 }
-	         });
-					 
-	         $("#human-checkbox").change(function() {
-						 if (this.checked) {
-	             mymap.addLayer(humanImpactHeat)
-						   mymap.addLayer(humanImpactCold)
-						   mymap.addLayer(humanImpactDry)
-						   mymap.addLayer(humanImpactFire)
-						   mymap.addLayer(humanImpactStorm)
-						   mymap.addLayer(humanImpactRain)
-						 }
-						 else {
-	             mymap.removeLayer(humanImpactHeat)
-						   mymap.removeLayer(humanImpactCold)
-						   mymap.removeLayer(humanImpactDry)
-						   mymap.removeLayer(humanImpactFire)
-						   mymap.removeLayer(humanImpactStorm)
-						   mymap.removeLayer(humanImpactRain)
-						 }
+	var humanImpactRain = L.geoJson(data, {
+		filter: function(feature, layer) {
+			return (feature.properties.impact == "Yes" && (feature.properties.type == "High tide floods" || feature.properties.type == "Heavy rainfall"));
+		},
+		pointToLayer: function(feature, latlng) {
+			return L.marker(latlng, {
+				icon: humanRainIcon
+			});
+		},
+		onEachFeature: onEachFeature,
+	});
+						
+	var naturalCold = L.geoJson(data, {
+			filter: function(feature, layer) {
+				return (feature.properties.impact == "No" && feature.properties.type == "Cold");
+			},
+			pointToLayer: function(feature, latlng) {
+				return L.marker(latlng, {
+									icon: naturalColdIcon
+				});
+			},
+						onEachFeature: onEachFeature 
+	});
+									
+	var naturalRain = L.geoJson(data, {
+			filter: function(feature, layer) {
+				return (feature.properties.impact == "No" && feature.properties.type == "Heavy rainfall");
+			},
+			pointToLayer: function(feature, latlng) {
+				return L.marker(latlng, {
+									icon: naturalRainIcon
+				});
+			},
+						onEachFeature: onEachFeature 
+	});
+									
+	humanImpactHeat.addTo(mymap);
+	humanImpactCold.addTo(mymap);
+	humanImpactDry.addTo(mymap);
+	humanImpactFire.addTo(mymap);
+	humanImpactStorm.addTo(mymap);
+	humanImpactRain.addTo(mymap);
+	naturalCold.addTo(mymap);
+	naturalRain.addTo(mymap);
+				
+	$("#natural-checkbox").change(function() {
+				if (this.checked) {
+		mymap.addLayer(naturalCold)
+				mymap.addLayer(naturalRain)
+				}
+				else {
+		mymap.removeLayer(naturalCold)
+				mymap.removeLayer(naturalRain)
+				}
+	});
+						
+	$("#human-checkbox").change(function() {
+				if (this.checked) {
+		mymap.addLayer(humanImpactHeat)
+				mymap.addLayer(humanImpactCold)
+				mymap.addLayer(humanImpactDry)
+				mymap.addLayer(humanImpactFire)
+				mymap.addLayer(humanImpactStorm)
+				mymap.addLayer(humanImpactRain)
+				}
+				else {
+		mymap.removeLayer(humanImpactHeat)
+				mymap.removeLayer(humanImpactCold)
+				mymap.removeLayer(humanImpactDry)
+				mymap.removeLayer(humanImpactFire)
+				mymap.removeLayer(humanImpactStorm)
+				mymap.removeLayer(humanImpactRain)
+				}
 
-	         });
-					 
-					 $('#heat-checkbox').change(function() {
-	 				    if (this.checked && $('#human-checkbox').is(':checked') && !$('#natural-checkbox').is(':checked')) {
-	 				       mymap.addLayer(humanImpactHeat);
-	 						 }
-	 						 else if (this.checked && $('#natural-checkbox').is(':checked') && !$('#human-checkbox').is(':checked')) {
-	 						// 	 mymap.addLayer(naturalHeat);
-	 						 }
-	 						 else if (this.checked && $('#natural-checkbox').is(':checked') && $('#human-checkbox').is(':checked')) {
-	 						// 	 mymap.addLayer(naturalHeat);
-	 							 mymap.addLayer(humanImpactHeat);
-	 						 }
-	 						 else if (this.checked && !$('#natural-checkbox').is(':checked') && !$('#human-checkbox').is(':checked')) {
-	 						//do nothing
-	 						 }
-	 				     else {
-	 				       mymap.removeLayer(humanImpactHeat);
-	 						//	 mymap.removeLayer(naturalHeat);
-	 						}
-					 });
+	});
+						
+	$('#heat-checkbox').change(function() {
+	if (this.checked && $('#human-checkbox').is(':checked') && !$('#natural-checkbox').is(':checked')) {
+		mymap.addLayer(humanImpactHeat);
+			}
+			else if (this.checked && $('#natural-checkbox').is(':checked') && !$('#human-checkbox').is(':checked')) {
+		// 	 mymap.addLayer(naturalHeat);
+			}
+			else if (this.checked && $('#natural-checkbox').is(':checked') && $('#human-checkbox').is(':checked')) {
+		// 	 mymap.addLayer(naturalHeat);
+				mymap.addLayer(humanImpactHeat);
+			}
+			else if (this.checked && !$('#natural-checkbox').is(':checked') && !$('#human-checkbox').is(':checked')) {
+		//do nothing
+			}
+		else {
+		mymap.removeLayer(humanImpactHeat);
+		//	 mymap.removeLayer(naturalHeat);
+		}
+	});
+				
+	$('#cold-checkbox').change(function() {
+	if (this.checked && $('#human-checkbox').is(':checked') && !$('#natural-checkbox').is(':checked')) {
+		mymap.addLayer(humanImpactCold);
+			}
+			else if (this.checked && $('#natural-checkbox').is(':checked') && !$('#human-checkbox').is(':checked')) {
+				mymap.addLayer(naturalCold);
+			}
+			else if (this.checked && $('#natural-checkbox').is(':checked') && $('#human-checkbox').is(':checked')) {
+				mymap.addLayer(naturalCold);
+				mymap.addLayer(humanImpactCold);
+			}
+			else if (this.checked && !$('#natural-checkbox').is(':checked') && !$('#human-checkbox').is(':checked')) {
+				//do nothing
+			}
+		else {
+		mymap.removeLayer(humanImpactCold);
+				mymap.removeLayer(naturalCold);
+		}
+			
+	});
+						
+	$('#dry-checkbox').change(function() {
+	if (this.checked && $('#human-checkbox').is(':checked') && !$('#natural-checkbox').is(':checked')) {
+		mymap.addLayer(humanImpactDry);
+			}
+			else if (this.checked && $('#natural-checkbox').is(':checked') && !$('#human-checkbox').is(':checked')) {
+		// 	 mymap.addLayer(naturalDry);
+			}
+			else if (this.checked && $('#natural-checkbox').is(':checked') && $('#human-checkbox').is(':checked')) {
+		// 	 mymap.addLayer(naturalDry);
+				mymap.addLayer(humanImpactDry);
+			}
+			else if (this.checked && !$('#natural-checkbox').is(':checked') && !$('#human-checkbox').is(':checked')) {
+		//do nothing
+			}
+		else {
+		mymap.removeLayer(humanImpactDry);
+		//	 mymap.removeLayer(naturalDry);
+		}
+	});
+						
+	$('#rain-checkbox').change(function() {
+	if (this.checked && $('#human-checkbox').is(':checked') && !$('#natural-checkbox').is(':checked')) {
+		mymap.addLayer(humanImpactRain);
+			}
+			else if (this.checked && $('#natural-checkbox').is(':checked') && !$('#human-checkbox').is(':checked')) {
+				mymap.addLayer(naturalRain);
+			}
+			else if (this.checked && $('#natural-checkbox').is(':checked') && $('#human-checkbox').is(':checked')) {
+				mymap.addLayer(naturalRain);
+				mymap.addLayer(humanImpactRain);
+			}
+			else if (this.checked && !$('#natural-checkbox').is(':checked') && !$('#human-checkbox').is(':checked')) {
+				//do nothing
+			}
+		else {
+		mymap.removeLayer(humanImpactRain);
+				mymap.removeLayer(naturalRain);
+		}
+	});
+						
+	$('#storm-checkbox').change(function() {
+	if (this.checked && $('#human-checkbox').is(':checked') && !$('#natural-checkbox').is(':checked')) {
+		mymap.addLayer(humanImpactStorm);
+			}
+			else if (this.checked && $('#natural-checkbox').is(':checked') && !$('#human-checkbox').is(':checked')) {
+		// 	 mymap.addLayer(naturalStorm);
+			}
+			else if (this.checked && $('#natural-checkbox').is(':checked') && $('#human-checkbox').is(':checked')) {
+		// 	 mymap.addLayer(naturalStorm);
+				mymap.addLayer(humanImpactStorm);
+			}
+			else if (this.checked && !$('#natural-checkbox').is(':checked') && !$('#human-checkbox').is(':checked')) {
+		// 	 do nothing
+			}
+		else {
+		mymap.removeLayer(humanImpactStorm);
+		//	 mymap.removeLayer(naturalStorm);
+		}
+	});
+						
+		$('#fire-checkbox').change(function() {
+		if (this.checked && $('#human-checkbox').is(':checked') && !$('#natural-checkbox').is(':checked')) {
+			mymap.addLayer(humanImpactFire);
+				}
+				else if (this.checked && $('#natural-checkbox').is(':checked') && !$('#human-checkbox').is(':checked')) {
+			// 	 mymap.addLayer(naturalFire);
+				}
+				else if (this.checked && $('#natural-checkbox').is(':checked') && $('#human-checkbox').is(':checked')) {
+			// 	 mymap.addLayer(naturalFire);
+					mymap.addLayer(humanImpactFire);
+				}
+				else if (this.checked && !$('#natural-checkbox').is(':checked') && !$('#human-checkbox').is(':checked')) {
+			// 	 do nothing
+				}
+			else {
+			mymap.removeLayer(humanImpactFire);
+			//	 mymap.removeLayer(naturalFire);
+			}
+		});
+});
 			 
-					 $('#cold-checkbox').change(function() {
-					    if (this.checked && $('#human-checkbox').is(':checked') && !$('#natural-checkbox').is(':checked')) {
-					       mymap.addLayer(humanImpactCold);
-							 }
-							 else if (this.checked && $('#natural-checkbox').is(':checked') && !$('#human-checkbox').is(':checked')) {
-							 	 mymap.addLayer(naturalCold);
-							 }
-							 else if (this.checked && $('#natural-checkbox').is(':checked') && $('#human-checkbox').is(':checked')) {
-							 	 mymap.addLayer(naturalCold);
-								 mymap.addLayer(humanImpactCold);
-							 }
-							 else if (this.checked && !$('#natural-checkbox').is(':checked') && !$('#human-checkbox').is(':checked')) {
-							 	 //do nothing
-							 }
-					     else {
-					       mymap.removeLayer(humanImpactCold);
-								 mymap.removeLayer(naturalCold);
-							}
-							 
-					 });
-					 
-					 $('#dry-checkbox').change(function() {
-				    if (this.checked && $('#human-checkbox').is(':checked') && !$('#natural-checkbox').is(':checked')) {
-				       mymap.addLayer(humanImpactDry);
-						 }
-						 else if (this.checked && $('#natural-checkbox').is(':checked') && !$('#human-checkbox').is(':checked')) {
-						// 	 mymap.addLayer(naturalDry);
-						 }
-						 else if (this.checked && $('#natural-checkbox').is(':checked') && $('#human-checkbox').is(':checked')) {
-						// 	 mymap.addLayer(naturalDry);
-							 mymap.addLayer(humanImpactDry);
-						 }
-						 else if (this.checked && !$('#natural-checkbox').is(':checked') && !$('#human-checkbox').is(':checked')) {
-						//do nothing
-						 }
-				     else {
-				       mymap.removeLayer(humanImpactDry);
-						//	 mymap.removeLayer(naturalDry);
-						}
-					 });
-					 
-					 $('#rain-checkbox').change(function() {
- 				    if (this.checked && $('#human-checkbox').is(':checked') && !$('#natural-checkbox').is(':checked')) {
- 				       mymap.addLayer(humanImpactRain);
- 						 }
- 						 else if (this.checked && $('#natural-checkbox').is(':checked') && !$('#human-checkbox').is(':checked')) {
- 						 	 mymap.addLayer(naturalRain);
- 						 }
- 						 else if (this.checked && $('#natural-checkbox').is(':checked') && $('#human-checkbox').is(':checked')) {
- 						 	 mymap.addLayer(naturalRain);
- 							 mymap.addLayer(humanImpactRain);
- 						 }
- 						 else if (this.checked && !$('#natural-checkbox').is(':checked') && !$('#human-checkbox').is(':checked')) {
-							 //do nothing
- 						 }
- 				     else {
- 				       mymap.removeLayer(humanImpactRain);
- 							 mymap.removeLayer(naturalRain);
- 						}
-					 });
-					 
-					 $('#storm-checkbox').change(function() {
- 				    if (this.checked && $('#human-checkbox').is(':checked') && !$('#natural-checkbox').is(':checked')) {
- 				       mymap.addLayer(humanImpactStorm);
- 						 }
- 						 else if (this.checked && $('#natural-checkbox').is(':checked') && !$('#human-checkbox').is(':checked')) {
- 						// 	 mymap.addLayer(naturalStorm);
- 						 }
- 						 else if (this.checked && $('#natural-checkbox').is(':checked') && $('#human-checkbox').is(':checked')) {
- 						// 	 mymap.addLayer(naturalStorm);
- 							 mymap.addLayer(humanImpactStorm);
- 						 }
- 						 else if (this.checked && !$('#natural-checkbox').is(':checked') && !$('#human-checkbox').is(':checked')) {
- 						// 	 do nothing
- 						 }
- 				     else {
- 				       mymap.removeLayer(humanImpactStorm);
- 						//	 mymap.removeLayer(naturalStorm);
- 						}
-					 });
-					 
-					 $('#fire-checkbox').change(function() {
- 				    if (this.checked && $('#human-checkbox').is(':checked') && !$('#natural-checkbox').is(':checked')) {
- 				       mymap.addLayer(humanImpactFire);
- 						 }
- 						 else if (this.checked && $('#natural-checkbox').is(':checked') && !$('#human-checkbox').is(':checked')) {
- 						// 	 mymap.addLayer(naturalFire);
- 						 }
- 						 else if (this.checked && $('#natural-checkbox').is(':checked') && $('#human-checkbox').is(':checked')) {
- 						// 	 mymap.addLayer(naturalFire);
- 							 mymap.addLayer(humanImpactFire);
- 						 }
- 						 else if (this.checked && !$('#natural-checkbox').is(':checked') && !$('#human-checkbox').is(':checked')) {
- 						// 	 do nothing
- 						 }
- 				     else {
- 				       mymap.removeLayer(humanImpactFire);
- 						//	 mymap.removeLayer(naturalFire);
- 						}
-					 });
-		   });
-			 
-	 		function onEachFeature(feature, layer) {
-	 		    // does this feature have a property named popupContent?
-	 		    if (feature.properties) {
-	 		        layer.bindPopup('<h1>'+feature.properties.authors+'</h1>Type: <b>'+feature.properties.type+'</b><br />Location: <b>'+feature.properties.location+'</b><br />Human impact? <b>'+feature.properties.impact+'</b><br />Summary: <b>'+feature.properties.summary+'</b>', {closeButton: false, offset: L.point(0, -20)});
-	 		                layer.on('mouseover', function() { layer.openPopup(); });
-	 		                layer.on('mouseout', function() { layer.closePopup(); });
-	 		    };
-	 		}
-			
-			$('#hamburger').on('click', function(e) {
-				$('#key').toggleClass('uncollapse');
-				$('#map-wrapper').toggleClass('uncollapse');
-				$('#filter-wrapper').toggleClass('uncollapse');
-				$('#hamburger').toggleClass('uncollapse');
-				$('#hamburger-wrapper').toggleClass('uncollapse');
-				e.preventDefault();
-			});
-			
-			jQuery(function($){
-			var windowWidth = $(window).width();
+function onEachFeature(feature, layer) {
+	// does this feature have a property named popupContent?
+	if (feature.properties) {
+		layer.bindPopup('<h1>'+feature.properties.authors+'</h1>Type: <b>'+feature.properties.type+'</b><br />Location: <b>'+feature.properties.location+'</b><br />Human impact? <b>'+feature.properties.impact+'</b><br />Summary: <b>'+feature.properties.summary+'</b>', {closeButton: false, offset: L.point(0, -20)});
+				layer.on('mouseover', function() { layer.openPopup(); });
+				layer.on('mouseout', function() { layer.closePopup(); });
+	};
+}
 
-			$(window).resize(function() {
-			    if(windowWidth != $(window).width()){
-			    location.reload();
-			    return;
-			    }
-			});
-			});
-			
-			$( document ).ready( function(){
-			    var checkboxes = $( ':checkbox' );
+$('#hamburger').on('click', function(e) {
+	$('#key').toggleClass('uncollapse');
+	$('#map-wrapper').toggleClass('uncollapse');
+	$('#filter-wrapper').toggleClass('uncollapse');
+	$('#hamburger').toggleClass('uncollapse');
+	$('#hamburger-wrapper').toggleClass('uncollapse');
+	e.preventDefault();
+});
 
-			    // Check all checkboxes
-			    checkboxes.prop( 'checked', true );
-					
-			});
+jQuery(function($){
+var windowWidth = $(window).width();
+
+$(window).resize(function() {
+	if(windowWidth != $(window).width()){
+	location.reload();
+	return;
+	}
+});
+});
+
+$( document ).ready( function(){
+	var checkboxes = $( ':checkbox' );
+
+	// Check all checkboxes
+	checkboxes.prop( 'checked', true );
+		
+});
 
 
 
