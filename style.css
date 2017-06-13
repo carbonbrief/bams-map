@@ -49,37 +49,6 @@ p {
 }
 
 #key {
-<<<<<<< HEAD
-	position: relative;
-	float: right;
-	height: 800px;
-	width: 20%;
-	z-index: 314159;
-	background-color: #f3f3f3;
-}
-
-#hamburger-wrapper {
-	display: inline-block;
-}
-
-#hamburger {
-	top: 10px;
-	align-content: center;
-	width: 30px;
-	height: 28px;
-	border-radius: 3px;
-	border: 1px solid #CCCCCC;
-	background-color: #FFFFFF;
-}
-
-#hamburger:visited {
-	outline-style: none;
-}
-
-#hamburger i {
-	padding-left: 2px;
-	padding-bottom: 2px;
-=======
 	position: absolute;
 	top: 7px;
 	right: 7px;
@@ -89,7 +58,6 @@ p {
 	border-radius: 6px;
 	background-color: rgba(243,243,243,0.8);
 	font-family: PT Sans, arial;
->>>>>>> master
 }
 
 #logo {
@@ -152,29 +120,3 @@ p {
 		visibility: hidden;
 	}
 }
-<<<<<<< HEAD
-
-#key.uncollapse {
-	width: 75%;
-}
-
-#hamburger.uncollapse {
-	display: inline-block;
-	position: relative;
-	left: 10px;
-}
-
-#hamburger-wrapper.uncollapse {
-	position: static;
-	height: 42px;
-}
-
-#filter-wrapper.uncollapse {
-	visibility: visible;
-}
-
-#map-wrapper.uncollapse {
-	width: 25%;
-}
-=======
->>>>>>> master
