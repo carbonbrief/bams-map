@@ -151,7 +151,7 @@ promise.then(function(data) {
 	pointToLayer: function(feature, latlng) {
 		return L.marker(latlng, {
 			icon: humanColdIcon,
-			tags: ['Cold & ice', 'Human impact']
+			tags: ['Cold/ice', 'Human impact']
 		}).on('click', onClick);
 	},
 			onEachFeature: onEachFeature
@@ -177,7 +177,7 @@ promise.then(function(data) {
 		pointToLayer: function(feature, latlng) {
 			return L.marker(latlng, {
 				icon: humanFireIcon,
-				tags: ['Wildfire', 'Human impact']
+				tags: ['Wildfires', 'Human impact']
 			}).on('click', onClick);
 		},
 		onEachFeature: onEachFeature
@@ -203,7 +203,7 @@ promise.then(function(data) {
 		pointToLayer: function(feature, latlng) {
 			return L.marker(latlng, {
 				icon: humanRainIcon,
-				tags: ['Rain & flooding', 'Human impact']
+				tags: ['Rain/flooding', 'Human impact']
 			}).on('click', onClick);
 		},
 		onEachFeature: onEachFeature
@@ -229,7 +229,7 @@ promise.then(function(data) {
 			pointToLayer: function(feature, latlng) {
 				return L.marker(latlng, {
 					icon: naturalColdIcon,
-					tags: ['Cold & ice', 'Natural']
+					tags: ['Cold/ice', 'Natural']
 				}).on('click', onClick);
 			},
 						onEachFeature: onEachFeature 
@@ -268,7 +268,7 @@ promise.then(function(data) {
 			pointToLayer: function(feature, latlng) {
 				return L.marker(latlng, {
 					icon: naturalRainIcon,
-					tags: ['Rain & Flooding', 'Natural']
+					tags: ['Rain/flooding', 'Natural']
 				}).on('click', onClick);
 			},
 						onEachFeature: onEachFeature 
@@ -294,7 +294,7 @@ promise.then(function(data) {
 			pointToLayer: function(feature, latlng) {
 				return L.marker(latlng, {
 					icon: unknownColdIcon,
-					tags: ['Cold & ice', 'Unknown']
+					tags: ['Cold/ice', 'Unknown']
 				}).on('click', onClick);
 			},
 						onEachFeature: onEachFeature 
@@ -333,7 +333,7 @@ promise.then(function(data) {
 			pointToLayer: function(feature, latlng) {
 				return L.marker(latlng, {
 					icon: unknownRainIcon,
-					tags: ['Rain & flooding', 'Unknown']
+					tags: ['Rain/flooding', 'Unknown']
 				}).on('click', onClick);
 			},
 						onEachFeature: onEachFeature 
@@ -590,8 +590,9 @@ zoomHome.addTo(mymap);
 // add tag controls filter
 
 L.control.tagFilterButton({
-	data: ['Human impact', 'Natural', 'Unknown', 'Cold & ice', 'Drought', 'Heat', 'Oceans', 'Rain & flooding', 'Storms', 'Wildfires'],
-	filterOnEveryClick: true
+	data: ['Human impact', 'Natural', 'Unknown', 'Cold/ice', 'Drought', 'Heat', 'Oceans', 'Rain/flooding', 'Storms', 'Wildfires'],
+	filterOnEveryClick: true,
+	openPopupOnHover: true
 }).addTo( mymap );
 
 

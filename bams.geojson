@@ -645,7 +645,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 105.319,61.524 ]
+       "coordinates":  [ 98.218,63.655 ]
     },
     "properties": {
     "location":"Russia",
@@ -1893,7 +1893,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -29.355,83.82 ]
+       "coordinates":  [ -34.355,83.82 ]
     },
     "properties": {
     "location":"Arctic",
@@ -2021,7 +2021,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -74.006,40.713 ]
+       "coordinates":  [ -74.839,36.719 ]
     },
     "properties": {
     "location":"Hurricane Sandy, eastern US seaboard",
