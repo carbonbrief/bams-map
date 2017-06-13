@@ -25,6 +25,7 @@ p {
 	font-size: 26px;
 	width: 460px;
 	border-radius: 6px;
+	box-shadow: 1px 1px 10px #000000;
 }
 
 .leaflet-popup-content-wrapper .leaflet-popup-content h1 {
