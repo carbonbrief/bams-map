@@ -9,94 +9,76 @@
 		 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css">
 		<link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|PT+Serif:400,400italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="leaflet.zoomhome.css"/>
+		<link rel="stylesheet" href="easy-button.css"/>
+		<link rel="stylesheet" href="leaflet.tag.filter.button.css"/>
 				 
 	  <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		 <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
 		 <script src="https://use.fontawesome.com/b418b54116.js"></script>
+		 <script src="leaflet.zoomhome.min.js"></script>
+		 <script src="easy-button.js"></script>
+		 <script src="leaflet.tag.filter.button.js"></script>
 		 
 </head>
 <body>
 <div id="container">
 	<div id="map-wrapper">	
-	 <div id="mapid"></div>
-	 <div id="logo"></div>
+		<div id="mapid"></div>
+		<div id="logo"></div>
 	</div>
- <div id="key">
-	<div id="hamburger-wrapper"> 
-		<button id="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></button>
+	<div id="title">
+		<h1>Attributing extreme weather to <span style="color: orange">climate change</span> - what have scientific studies found?</h1>
 	</div>
-	<div id="filter-wrapper">
-		<ul class="list-group">
-	    <li class="list-group-item">
-				  <div id="circle-1"></div>
-	        Human impact
-	        <div class="material-switch pull-right">
-	            <input id="human-checkbox" name="someSwitchOption001" type="checkbox" />
-	            <label for="human-checkbox" class="label-default"></label>
-	        </div>
-	    </li>
-	    <li class="list-group-item">
-				  <div id="circle-2"></div>
-	        Natural
-	        <div class="material-switch pull-right">
-	            <input id="natural-checkbox" name="someSwitchOption001" type="checkbox" />
-	            <label for="natural-checkbox" class="label-default"></label>
-	        </div>
-	    </li>
-		</ul>
-		<ul class="list-group">
-	    <li class="list-group-item">
-				  <i class="fa fa-snowflake-o"></i>
-	        Cold &amp; ice
-	        <div class="material-switch pull-right">
-	            <input id="cold-checkbox" name="someSwitchOption001" type="checkbox" />
-	            <label for="cold-checkbox" class="label-default"></label>
-	        </div>
-	    </li>
-	    <li class="list-group-item">
-				  <i class="fa fa-sun-o"></i>
-	        Dryness
-	        <div class="material-switch pull-right">
-	            <input id="dry-checkbox" name="someSwitchOption001" type="checkbox" />
-	            <label for="dry-checkbox" class="label-default"></label>
-	        </div>
-	    </li>
-	    <li class="list-group-item">
-				  <i class="fa fa-thermometer-full"></i>
-	        Heat
-	        <div class="material-switch pull-right">
-	            <input id="heat-checkbox" name="someSwitchOption001" type="checkbox" />
-	            <label for="heat-checkbox" class="label-default"></label>
-	        </div>
-	    </li>
-	    <li class="list-group-item">
-				  <i class="fa fa-tint"></i>
-	        Rain &amp; flooding
-	        <div class="material-switch pull-right">
-	            <input id="rain-checkbox" name="someSwitchOption001" type="checkbox" />
-	            <label for="rain-checkbox" class="label-default"></label>
-	        </div>
-	    </li>
-	    <li class="list-group-item">
-				  <i class="fa fa-bolt"></i>
-	        Storms
-	        <div class="material-switch pull-right">
-	            <input id="storm-checkbox" name="someSwitchOption001" type="checkbox" />
-	            <label for="storm-checkbox" class="label-default"></label>
-	        </div>
-	    </li>
-	    <li class="list-group-item">
-				  <i class="glyphicon glyphicon-fire"></i>
-	        Wildfires
-	        <div class="material-switch pull-right">
-	            <input id="fire-checkbox" name="someSwitchOption001" type="checkbox" />
-	            <label for="fire-checkbox" class="label-default"></label>
-	        </div>
-	    </li>
-		</ul>
+	<div id="key">
+		<div id="filter-wrapper">
+			<ul class="list-group">
+			<li class="list-group-item">
+					<div id="circle-1"></div>
+				Human impact
+			</li>
+			<li class="list-group-item">
+					<div id="circle-2"></div>
+				Natural
+			</li>
+			<li class="list-group-item">
+					<div id="circle-3"></div>
+				Inconclusive
+			</li>
+			</ul>
+			<ul class="list-group">
+			<li class="list-group-item">
+					<i class="fa fa-snowflake-o"></i>
+				Cold &amp; ice
+			</li>
+			<li class="list-group-item">
+					<i class="fa fa-sun-o"></i>
+				Drought
+			</li>
+			<li class="list-group-item">
+					<i class="fa fa-thermometer-full"></i>
+				Heat
+			</li>
+			<li class="list-group-item">
+					<i class="fa fa-ship"></i>
+				Oceans
+			</li>
+			<li class="list-group-item">
+					<i class="fa fa-tint"></i>
+				Rain &amp; flooding
+			</li>
+			<li class="list-group-item">
+					<i class="fa fa-bolt"></i>
+				Storms
+			</li>
+			<li class="list-group-item">
+					<i class="glyphicon glyphicon-fire"></i>
+				Wildfires
+			</li>
+			</ul>
+		</div>
 	</div>
- </div>
 </div>
 	 <script type="text/javascript" src="script.js"></script>
 </body>
