@@ -19,7 +19,7 @@ p {
 	position: absolute;
 	top: 10px;
 	left: 50px;
-	background-color: rgba(243,243,243,0.95);
+	background-color: rgba(255,255,255,1);
 	z-index: 2000;
 	font-family: PT Sans Narrow;
 	font-size: 26px;
@@ -50,8 +50,8 @@ p {
 
 #key {
 	position: absolute;
-	top: 7px;
-	right: 7px;
+	top: 10px;
+	right: 10px;
 	height: 420px;
 	width: 150px;
 	z-index: 500;
