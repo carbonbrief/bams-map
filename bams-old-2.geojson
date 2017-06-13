@@ -1,0 +1,341 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 13.80,48.66 ]
+    },
+    "properties": {
+    "location":"Central Europe",
+    "type":"Heat",
+    "impact":"Yes",
+    "summary":"\"Human-induced climate change has contributed to an increased frequency and intensity of short-term heat waves and\nheat stress, over central and eastern Europe though quantitative estimates of how much change has occurred in the likelihood of the 2015 event are highly uncertain depending on the methodology used.\"",
+    "authors":"Sippel et al., (2016)"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 15.26,54.53 ]
+    },
+    "properties": {
+    "location":"Europe",
+    "type":"Heat",
+    "impact":"Yes",
+    "summary":"\"Modeling experiments indicate that human-induced climate\nchange was a major factor in setting the conditions for the development of 2015 European heat waves.\"",
+    "authors":"Dong et al., (2016)"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 124.37,46.16 ]
+    },
+    "properties": {
+    "location":"N. W China",
+    "type":"Heat",
+    "impact":"Yes",
+    "summary":"\"The probability of recording breaking heat over Northwest\nChina in July 2015 was made three-fold more likely due to human-induced climate change.\"",
+    "authors":"Miao et al., (2016)"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 114.70,33.24 ]
+    },
+    "properties": {
+    "location":"W. China",
+    "type":"Heat",
+    "impact":"Yes",
+    "summary":"\"Extreme daytime maximum temperatures like those observed\nin western China in July 2015 were made at least three times\nlikely by climate change.\"",
+    "authors":"Sun et al., (2016)"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 138.08,35.71 ]
+    },
+    "properties": {
+    "location":"Japan",
+    "type":"Heat",
+    "impact":"Yes",
+    "summary":"\"The Japanese heat wave of early August of 2015 was mainly\ndue to a naturally occurring weather pattern, however, anthropogenic warming increased the probability of occurrence of the event by 1.5 to 1.7 times.\"",
+    "authors":"Takahashi et al., (2016)"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 135.62,-31.40 ]
+    },
+    "properties": {
+    "location":"S. Australia",
+    "type":"Heat",
+    "impact":"Yes",
+    "summary":"\"Climate change may have exacerbated the effect of one of the\nstrongest El Niños on record in producing record heat in southern Australia. The study uses a novel approach for separating the role of ENSO and anthropogenic climate change within the context of an event attribution study.\"",
+    "authors":"Black et al., (2016)"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -149.85,0.00 ]
+    },
+    "properties": {
+    "location":"Central Equatorial Pacific",
+    "type":"Heat",
+    "impact":"Yes",
+    "summary":"\"Model simulations indicate that human-induced climate\nchange was largely to blame for 2015 becoming the hottest\nyear on record for the planet and regionally for India\"",
+    "authors":"Kam et al. (2016)"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.26,40.68 ]
+    },
+    "properties": {
+    "location":"N.E. US",
+    "type":"Cold",
+    "impact":"Yes",
+    "summary":"\"The unusually severe cold winter days over the eastern US\nduring 2015 were not symptomatic of human-induced climate\nchange. In fact, long-term trends show cold outbreaks are less\nlikely as winters have become warmer and less variable.\"",
+    "authors":"Trenary et al. (2016)"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -100.11,40.41 ]
+    },
+    "properties": {
+    "location":"N. America",
+    "type":"Cold",
+    "impact":"No",
+    "summary":"\"Unusually cold North American temperatures for February\n2015 were mostly a symptom of an atmospheric circulation\npattern that was internally generated, rather than being driven\nby either sea ice or ocean temperature conditions.\"",
+    "authors":"Bellprat et al. (2016)"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 29.09,26.70 ]
+    },
+    "properties": {
+    "location":"Egypt",
+    "type":"Heat & humidity",
+    "impact":"Yes",
+    "summary":"\"A region used to high temperatures and dryness was staggered by extraordinary heat and humidity made more likely by climate change.\"",
+    "authors":"Mitchell et al., (2016)"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 73.04,28.88 ]
+    },
+    "properties": {
+    "location":"India & Pakistan",
+    "type":"Heat & humidity",
+    "impact":"Yes",
+    "summary":"\"Two deadly, unrelated heat waves in India and Pakistan in\n2015 were each exacerbated by anthropogenic climate change.\"",
+    "authors":"Wehner et al., (2016)"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 113.47,-1.46 ]
+    },
+    "properties": {
+    "location":"Indonesia",
+    "type":"Dryness",
+    "impact":"Yes",
+    "summary":"\"Human-induced climate change increased the likelihood of the extreme heat that combined with typical El Niño precipitation deficits to produce the drought conditions that dominated Indonesian weather from July through October of 2015.\"",
+    "authors":"King et al., (2016)"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 146.87,-42.33 ]
+    },
+    "properties": {
+    "location":"Tasmania",
+    "type":"Dryness",
+    "impact":"Yes",
+    "summary":"\"Natural variability was the main contributor to conditions\nresulting in record low rainfall in October 2015 in Tasmania,\nthough anthropogenic climate change and El Niño made small\nbut significant contributions to increasing the likelihood of such\nan event.\"",
+    "authors":"Karoly et al., (2016)"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.27,34.56 ]
+    },
+    "properties": {
+    "location":"China",
+    "type":"Heavy rainfall",
+    "impact":"Yes",
+    "summary":"\"Anthropogenic climate change increased the probability that\na short-duration, intense rainfall events and associated flooding, like the one that occurred in May, would occur in parts of southeast China.\"",
+    "authors":"Burke et al., (2016)"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.95,9.08 ]
+    },
+    "properties": {
+    "location":"Nigeria",
+    "type":"Heavy rainfall",
+    "impact":"No",
+    "summary":"\"The delayed onset of the wet season over Nigeria during April–May 2015 was not made more likely because of human-caused warming or anomalous sea surface temperatures.\"",
+    "authors":"Lawal et al., (2016)"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 78.97,20.59 ]
+    },
+    "properties": {
+    "location":"India",
+    "type":"Heavy rainfall",
+    "impact":"No",
+    "summary":"\"Human-induced changes in atmospheric chemical and aerosol\ncomposition overall did not influence the severity of extreme\none-day rainfall that occurred over Chennai during December\n2015.\"",
+    "authors":"Oldenborgh et al., (2016)"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.44,55.38 ]
+    },
+    "properties": {
+    "location":"UK",
+    "type":"Sunshine",
+    "impact":"Yes",
+    "summary":"\"The perception of drab British winters may be challenged as\nlonger sunny spells , such as the extreme winter sunshine over\nthe United Kingdom in 2014/15, have become more than 1.5\ntimes more likely under the influence of climate change.\"",
+    "authors":"Christidis et al., (2016)"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.35,56.13 ]
+    },
+    "properties": {
+    "location":"Canada",
+    "type":"Drought",
+    "impact":"Yes",
+    "summary":"\"The extreme intensity of the drought was likely due to two\nprincipal factors: an anthropogenic effect via an unusual early\nspring 2015 warming that acted to reduce snow cover and soil\nmoisture, followed by a naturally occurring persistent upper\nridge that caused heat and low rainfall during May-July 2015.\"",
+    "authors":"Szeto et al., (2016)"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 40.49,9.15 ]
+    },
+    "properties": {
+    "location":"Ethiopia & Southern Africa",
+    "type":"Drought",
+    "impact":"Yes",
+    "summary":"\"Anthropogenic warming contributed to the 2015 Ethiopian and\nsouthern African droughts by increasing local air temperatures\nand El Niño sea surface temperatures, causing reduced rainfall\nand runoff, and contributing to severe food insecurity.\"",
+    "authors":"Funk et al., (2016)"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -146.60,47.86 ]
+    },
+    "properties": {
+    "location":"Western North Pacific",
+    "type":"Tropical cyclones",
+    "impact":"Yes",
+    "summary":"\"Extreme typhoon energy over the region of the western North\nPacific during 2015 was mainly the result of El Niño-related sea\nsurface warming of the tropical east Pacific, though the effect\nof human-induced ocean warming also made such an active\nseason more likely.\"",
+    "authors":"Zhang et al., (2016)"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -149.49,64.20 ]
+    },
+    "properties": {
+    "location":"Alaska",
+    "type":"Wildfires",
+    "impact":"Yes",
+    "summary":"\"The 2015 Alaska fire season burned 5.1 million acres, the second-most since records began in 1940. Human-induced climate change may have increased the risk of a fire season of this severity by 34%–60%.\"",
+    "authors":"Partain et al. (2016)"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -10.02,83.82 ]
+    },
+    "properties": {
+    "location":"Arctic",
+    "type":"Sea ice",
+    "impact":"Yes",
+    "summary":"\"Human-induced climate change set the stage for conditions\nthat resulted in the lowest sea-ice extent ever recorded for the\nmonth of March, typically when it reaches its annual maximum\nextent in the Arctic.\"",
+    "authors":"Fučkar et al., (2016)"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -80.19,25.76 ]
+    },
+    "properties": {
+    "location":"Miami, Florida",
+    "type":"High tide floods",
+    "impact":"Yes",
+    "summary":"\"Flooding during high tides, on otherwise sunny days in the\ncoastal Miami region, have increased by more than 500% in\nthe past two decades. The late September 2015 inundation\nevent was symptomatic of such a trend in tidal floods that are\nbecoming commonplace as sea levels rise, in part, due to anthropogenic influences.\"",
+    "authors":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -120.74,47.75 ]
+    },
+    "properties": {
+    "location":"Washington State, US",
+    "type":"Snow pack drought",
+    "impact":"Yes",
+    "summary":"\"Low snowpack in the Washington Cascades by spring 2015\nresulted despite near-normal winter precipitation. Exceedingly\nhigh temperatures, related in part to anthropogenic warming,\nreduced the overall regional snowpack\"",
+    "authors":"Fosu et al., (2016)"
+    }
+  }
+]
+}
