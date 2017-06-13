@@ -20,9 +20,9 @@ p {
 }
 
 #map-wrapper {
-	display: inline-block;
+	/*display: inline-block;*/
 	position: absolute;
-	width: 80%;
+	width: 100%;
 }
 
 #mapid { 
@@ -30,32 +30,15 @@ p {
 }
 
 #key {
-	position: relative;
-	float: right;
-	height: 800px;
-	width: 20%;
-	z-index: 314159;
-	background-color: #f3f3f3;
-}
-
-#hamburger-wrapper {
-	display: inline-block;
-}
-
-#hamburger {
-	top: 10px;
-	text-align: center;
-	width: 42px;
-	/*padding-right: 10px;*/
-}
-
-#hamburger i {
-	text-align: center;
-}
-
-.fa-bars  {
-    display: inline-block;
-    width: 100%;
+	position: absolute;
+	top: 7px;
+	right: 7px;
+	height: 420px;
+	width: 150px;
+	z-index: 999999;
+	border-radius: 6px;
+	background-color: rgba(243,243,243,0.8);
+	font-family: PT Sans, arial;
 }
 
 #logo {
@@ -106,103 +89,12 @@ p {
 			margin-right: 5px;
     }
 
-.material-switch > input[type="checkbox"] {
-    display: none;   
-}
-
-.material-switch > label {
-    cursor: pointer;
-    height: 0px;
-    position: relative; 
-    width: 40px;  
-}
-
-.material-switch > label::before {
-    background: rgb(0, 0, 0);
-    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
-    border-radius: 8px;
-    content: '';
-    height: 16px;
-    margin-top: -8px;
-    position:absolute;
-    opacity: 0.3;
-    transition: all 0.4s ease-in-out;
-    width: 40px;
-}
-.material-switch > label::after {
-    background: rgb(255, 255, 255);
-    border-radius: 16px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
-    content: '';
-    height: 24px;
-    left: -4px;
-    margin-top: -8px;
-    position: absolute;
-    top: -4px;
-    transition: all 0.3s ease-in-out;
-    width: 24px;
-}
-.material-switch > input[type="checkbox"]:checked + label::before {
-    background: inherit;
-    opacity: 0.5;
-}
-.material-switch > input[type="checkbox"]:checked + label::after {
-    background: inherit;
-    left: 20px;
-}
 
 @media (max-width: 1200px) {
-	#map-wrapper {
-		width: 75%;
-	}
-	#key {
-		width: 25%;
-	}
 }
 
-@media (max-width: 800px) {
-	#map-wrapper {
-		width: 100%;
-	}
+@media (max-width: 600px) {
 	#key {
-		width: 0%;
-	}
-	#hamburger {
-		position: fixed;
-		right: 8px;
-		top: 8px;
-		display: inline;
-	}
-	#filter-wrapper {
 		visibility: hidden;
 	}
-}
-
-@media (min-width: 801px) {
-	#hamburger {
-		display: none;
-	}
-}
-
-#key.uncollapse {
-	width: 65%;
-}
-
-#hamburger.uncollapse {
-	display: inline-block;
-	position: relative;
-	left: 10px;
-}
-
-#hamburger-wrapper.uncollapse {
-	position: static;
-	height: 40px;
-}
-
-#filter-wrapper.uncollapse {
-	visibility: visible;
-}
-
-#map-wrapper.uncollapse {
-	width: 25%;
 }
