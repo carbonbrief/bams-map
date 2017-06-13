@@ -35,7 +35,7 @@ p {
 	right: 7px;
 	height: 420px;
 	width: 150px;
-	z-index: 999999;
+	z-index: 500;
 	border-radius: 6px;
 	background-color: rgba(243,243,243,0.8);
 	font-family: PT Sans, arial;

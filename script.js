@@ -138,7 +138,7 @@ promise.then(function(data) {
 		pointToLayer: function(feature, latlng) {
 			return L.marker(latlng, {
 				icon: humanHeatIcon,
-				tags: ['Human impact', 'Heat']
+				tags: ['Human', 'Heat']
 			}).on('click', onClick);
 		},
 					onEachFeature: onEachFeature
@@ -151,7 +151,7 @@ promise.then(function(data) {
 	pointToLayer: function(feature, latlng) {
 		return L.marker(latlng, {
 			icon: humanColdIcon,
-			tags: ['Cold/ice', 'Human impact']
+			tags: ['Cold/ice', 'Human']
 		}).on('click', onClick);
 	},
 			onEachFeature: onEachFeature
@@ -164,7 +164,7 @@ promise.then(function(data) {
 	pointToLayer: function(feature, latlng) {
 		return L.marker(latlng, {
 			icon: humanDryIcon,
-			tags: ['Drought', 'Human impact']
+			tags: ['Drought', 'Human']
 		}).on('click', onClick);
 	},
 	onEachFeature: onEachFeature
@@ -177,7 +177,7 @@ promise.then(function(data) {
 		pointToLayer: function(feature, latlng) {
 			return L.marker(latlng, {
 				icon: humanFireIcon,
-				tags: ['Wildfires', 'Human impact']
+				tags: ['Wildfires', 'Human']
 			}).on('click', onClick);
 		},
 		onEachFeature: onEachFeature
@@ -190,7 +190,7 @@ promise.then(function(data) {
 		pointToLayer: function(feature, latlng) {
 			return L.marker(latlng, {
 				icon: humanStormIcon,
-				tags: ['Storms', 'Human impact']
+				tags: ['Storms', 'Human']
 			}).on('click', onClick);
 		},
 		onEachFeature: onEachFeature
@@ -203,7 +203,7 @@ promise.then(function(data) {
 		pointToLayer: function(feature, latlng) {
 			return L.marker(latlng, {
 				icon: humanRainIcon,
-				tags: ['Rain/flooding', 'Human impact']
+				tags: ['Rain/flooding', 'Human']
 			}).on('click', onClick);
 		},
 		onEachFeature: onEachFeature
@@ -216,7 +216,7 @@ promise.then(function(data) {
 		pointToLayer: function(feature, latlng) {
 			return L.marker(latlng, {
 				icon: humanOceanIcon,
-				tags: ['Oceans', 'Human impact']
+				tags: ['Oceans', 'Human']
 			}).on('click', onClick);
 		},
 		onEachFeature: onEachFeature
@@ -381,7 +381,7 @@ zoomHome.addTo(mymap);
 // add tag controls filter
 
 L.control.tagFilterButton({
-	data: ['Human impact', 'Natural', 'Inconclusive', 'Cold/ice', 'Drought', 'Heat', 'Oceans', 'Rain/flooding', 'Storms', 'Wildfires'],
+	data: ['Human', 'Natural', 'Inconclusive', 'Cold/ice', 'Drought', 'Heat', 'Oceans', 'Rain/flooding', 'Storms', 'Wildfires'],
 	filterOnEveryClick: true,
 	openPopupOnHover: true
 }).addTo( mymap );
