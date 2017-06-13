@@ -41,6 +41,12 @@ L.tileLayer('https://api.mapbox.com/styles/v1/rospearce/ciwgju4yv00cy2pmqeggx1mx
 				markerColor: 'blue'
 			});
 
+		var naturalDryIcon = L.AwesomeMarkers.icon({
+				icon: 'sun-o',  
+				prefix: 'fa',
+				markerColor: 'blue'
+			});
+
 		var naturalStormIcon = L.AwesomeMarkers.icon({
 				icon: 'bolt',  
 				prefix: 'fa',
@@ -132,7 +138,7 @@ promise.then(function(data) {
 		pointToLayer: function(feature, latlng) {
 			return L.marker(latlng, {
 				icon: humanHeatIcon,
-				tags: ['human', 'heat']
+				tags: ['Human impact', 'Heat']
 			}).on('click', onClick);
 		},
 					onEachFeature: onEachFeature
@@ -224,6 +230,19 @@ promise.then(function(data) {
 				return L.marker(latlng, {
 					icon: naturalColdIcon,
 					tags: ['Cold & ice', 'Natural']
+				}).on('click', onClick);
+			},
+						onEachFeature: onEachFeature 
+	}).addTo(mymap);
+
+	var naturalDry = L.geoJson(data, {
+			filter: function(feature, layer) {
+				return (feature.properties.impact == "No" && (feature.properties.type == "Drought"));
+			},
+			pointToLayer: function(feature, latlng) {
+				return L.marker(latlng, {
+					icon: naturalDryIcon,
+					tags: ['Drought', 'Natural']
 				}).on('click', onClick);
 			},
 						onEachFeature: onEachFeature 
