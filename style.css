@@ -155,7 +155,7 @@ p {
 		margin-top: 0px
 	}
 	.leaflet-popup-content-wrapper .leaflet-popup-content {
-		font-size: 12px;
+		font-size: 12.5px;
 		margin: 12px;
 	}
 
@@ -169,7 +169,7 @@ p {
 
 @media (max-width: 700px) {
 	#key {
-		font-size: 12.5px;
+		font-size: 12.8px;
 	}
 	#mapid { 
 	height: 600px;
