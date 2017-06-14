@@ -47,6 +47,11 @@ p {
 	color: #2f8fce;
 }
 
+.leaflet-popup-content-wrapper .leaflet-popup-content {
+	font-size: 13.5px;
+	font-family: PT Sans, Arial;
+}
+
 #container {
 	width: 100%;
 }
@@ -71,7 +76,7 @@ p {
 	border-radius: 6px;
 	background-color: rgba(243,243,243,0.8);
 	font-family: PT Sans, arial;
-	font-size: 13px;
+	font-size: 14px;
 }
 
 #logo {
@@ -129,6 +134,18 @@ p {
 	}
 	#mapid { 
 	height: 700px;
+	}
+	.leaflet-popup-content-wrapper .leaflet-popup-content h1 {
+		font-size: 18px;
+		margin-top: 0px
+	}
+	.leaflet-popup-content-wrapper .leaflet-popup-content {
+		font-size: 12px;
+		margin: 12px;
+	}
+
+	.leaflet-popup-content-wrapper {
+		max-width: 280px;
 	}
 }
 
