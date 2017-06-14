@@ -651,7 +651,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -97.563,31.054 ]
+       "coordinates":  [ -100.239,33.261 ]
     },
     "properties": {
     "location":"Texas",
@@ -1348,7 +1348,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -119.682,36.116 ]
+       "coordinates":  [ -119.487,35.097 ]
     },
     "properties": {
     "location":"California",
