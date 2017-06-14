@@ -232,7 +232,7 @@ promise.then(function(data) {
 			pointToLayer: function(feature, latlng) {
 				return L.marker(latlng, {
 					icon: naturalColdIcon,
-					tags: ['Cold/ice', 'Natural']
+					tags: ['Cold/ice', 'Not human']
 				}).on('dblclick', onDoubleClick);
 			},
 						onEachFeature: onEachFeature 
@@ -245,7 +245,7 @@ promise.then(function(data) {
 			pointToLayer: function(feature, latlng) {
 				return L.marker(latlng, {
 					icon: naturalDryIcon,
-					tags: ['Drought', 'Natural']
+					tags: ['Drought', 'Not human']
 				}).on('dblclick', onDoubleClick);
 			},
 						onEachFeature: onEachFeature 
@@ -258,7 +258,7 @@ promise.then(function(data) {
 		pointToLayer: function(feature, latlng) {
 			return L.marker(latlng, {
 				icon: naturalHeatIcon,
-				tags: ['Heat', 'Natural']
+				tags: ['Heat', 'Not human']
 			}).on('dblclick', onDoubleClick);
 		},
 					onEachFeature: onEachFeature
@@ -271,7 +271,7 @@ promise.then(function(data) {
 			pointToLayer: function(feature, latlng) {
 				return L.marker(latlng, {
 					icon: naturalRainIcon,
-					tags: ['Rain/flooding', 'Natural']
+					tags: ['Rain/flooding', 'Not human']
 				}).on('dblclick', onDoubleClick);
 			},
 						onEachFeature: onEachFeature 
@@ -284,7 +284,7 @@ promise.then(function(data) {
 			pointToLayer: function(feature, latlng) {
 				return L.marker(latlng, {
 					icon: naturalStormIcon,
-					tags: ['Storms', 'Natural']
+					tags: ['Storms', 'Not human']
 				}).on('dblclick', onDoubleClick);
 			},
 						onEachFeature: onEachFeature 
@@ -386,7 +386,7 @@ zoomHome.addTo(mymap);
 // add tag controls filter
 
 L.control.tagFilterButton({
-	data: ['Human', 'Natural', 'Inconclusive', 'Cold/ice', 'Drought', 'Heat', 'Oceans', 'Rain/flooding', 'Storms', 'Wildfires'],
+	data: ['Human', 'Not human', 'Inconclusive', 'Cold/ice', 'Drought', 'Heat', 'Oceans', 'Rain/flooding', 'Storms', 'Wildfires'],
 	filterOnEveryClick: true,
 	openPopupOnHover: true
 }).addTo( mymap );
