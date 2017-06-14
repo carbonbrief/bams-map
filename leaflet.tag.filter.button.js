@@ -4,7 +4,6 @@
 
         options: {
             icon: "fa-filter", //buton icon default is fa-filter
-            fillColor: "orange",
             onSelectionComplete: null, // the callback function for selected tags
             data: null, // the data to be used for tags popup, it can be array or function
             clearText: 'clear', // the text of the clear button
