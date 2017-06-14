@@ -2227,6 +2227,23 @@
     "pdf":"(pdf)",
     "link":"http://journals.ametsoc.org/doi/pdf/10.1175/1520-0477-95.9.S1.1"
     }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -91.962,30.984 ]
+    },
+    "properties": {
+    "location":"Lousiana",
+    "type":"Rain/flooding",
+    "impact_description":"More severe or more likely to occur",
+    "impact":"Yes",
+    "summary":"“Taking into account all modeling results, the probability of an event like the one in south Louisiana in 2016 has increased at least by a factor of 1.4 due to radiative forcing.”",
+    "authors":"van de Wiel et al., (2017) Hydrology and Earth System Sciences, 21, 897-921",
+    "pdf":"",
+    "link":"http://www.hydrol-earth-syst-sci.net/21/897/2017/hess-21-897-2017-discussion.html"
+    }
   }
 ]
 }
