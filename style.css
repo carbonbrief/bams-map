@@ -127,10 +127,16 @@ p {
 	#title {
 		visibility: hidden;
 	}
+	#mapid { 
+	height: 700px;
+	}
 }
 
 @media (max-width: 600px) {
 	#key {
 		visibility: hidden;
+	}
+	#mapid { 
+	height: 550px;
 	}
 }
