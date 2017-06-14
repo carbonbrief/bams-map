@@ -53,7 +53,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 15.26,54.53 ]
+       "coordinates":  [ 12.480,50.226 ]
     },
     "properties": {
     "location":"Europe",
@@ -229,7 +229,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 133.775,-25.274 ]
+       "coordinates":  [ 132.715,-26.834 ]
     },
     "properties": {
     "location":"Australia",
@@ -261,7 +261,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 127.767,35.908 ]
+       "coordinates":  [ 127.925,35.512 ]
     },
     "properties": {
     "location":"South Korea",
@@ -325,7 +325,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 133.775,-25.274 ]
+       "coordinates":  [ 128.848,-25.255 ]
     },
     "properties": {
     "location":"Australia",
@@ -389,7 +389,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 133.775,-25.274 ]
+       "coordinates":  [ 135.176,-21.708 ]
     },
     "properties": {
     "location":"Australia",
@@ -437,7 +437,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 138.253,36.205 ]
+       "coordinates":  [ 133.726,34.649 ]
     },
     "properties": {
     "location":"Japan",
@@ -517,7 +517,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 15.26,54.53 ]
+       "coordinates":  [ 15.293,48.626 ]
     },
     "properties": {
     "location":"Europe",
@@ -533,7 +533,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 15.26,54.53 ]
+       "coordinates":  [ 8.613,49.088 ]
     },
     "properties": {
     "location":"Europe",
@@ -549,7 +549,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 105.319,61.524 ]
+       "coordinates":  [ 73.652,61.892 ]
     },
     "properties": {
     "location":"Russia",
@@ -565,7 +565,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 133.775,-25.274 ]
+       "coordinates":  [ 130.605,-25.572 ]
     },
     "properties": {
     "location":"Australia",
@@ -645,7 +645,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 105.319,61.524 ]
+       "coordinates":  [ 98.218,63.655 ]
     },
     "properties": {
     "location":"Russia",
@@ -693,7 +693,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -95.713,37.090 ]
+       "coordinates":  [ -101.821,38.872 ]
     },
     "properties": {
     "location":"United States",
@@ -789,7 +789,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -3.44,55.38 ]
+       "coordinates":  [ -2.593,54.862 ]
     },
     "properties": {
     "location":"UK",
@@ -885,7 +885,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 113.921,-0.789 ]
+       "coordinates":  [ 132.583,-1.431 ]
     },
     "properties": {
     "location":"Indonesia",
@@ -1061,7 +1061,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -119.682,36.116 ]
+       "coordinates":  [ -119.641,37.778 ]
     },
     "properties": {
     "location":"California",
@@ -1077,7 +1077,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 133.775,-25.274 ]
+       "coordinates":  [ 134.517,-28.016 ]
     },
     "properties": {
     "location":"Australia",
@@ -1093,7 +1093,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -119.682,36.116 ]
+       "coordinates":  [ -121.047,38.366 ]
     },
     "properties": {
     "location":"California",
@@ -1109,7 +1109,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -119.682,36.116 ]
+       "coordinates":  [ -116.125,33.348 ]
     },
     "properties": {
     "location":"California",
@@ -1125,7 +1125,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -119.682,36.116 ]
+       "coordinates":  [ -118.235,36.057 ]
     },
     "properties": {
     "location":"California",
@@ -1157,7 +1157,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -119.682,36.116 ]
+       "coordinates":  [ -116.960,34.731 ]
     },
     "properties": {
     "location":"California",
@@ -1333,7 +1333,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -97.563,31.054 ]
+       "coordinates":  [ -100.657,32.128 ]
     },
     "properties": {
     "location":"Texas",
@@ -1669,7 +1669,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -3.44,55.38 ]
+       "coordinates":  [ -2.153,51.766 ]
     },
     "properties": {
     "location":"UK",
@@ -1845,7 +1845,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -119.682,36.116 ]
+       "coordinates":  [ -117.356,35.594 ]
     },
     "properties": {
     "location":"California",
@@ -1861,7 +1861,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -10.02,83.82 ]
+       "coordinates":  [ 34.629,83.82 ]
     },
     "properties": {
     "location":"Arctic",
@@ -1877,7 +1877,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -10.02,83.82 ]
+       "coordinates":  [ 0.000,83.82 ]
     },
     "properties": {
     "location":"Arctic",
@@ -1893,7 +1893,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -10.02,83.82 ]
+       "coordinates":  [ -34.355,83.82 ]
     },
     "properties": {
     "location":"Arctic",
@@ -2021,7 +2021,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -74.006,40.713 ]
+       "coordinates":  [ -74.839,36.719 ]
     },
     "properties": {
     "location":"Hurricane Sandy, eastern US seaboard",
@@ -2069,7 +2069,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -3.44,55.38 ]
+       "coordinates":  [ -3.713,55.745 ]
     },
     "properties": {
     "location":"UK",

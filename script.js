@@ -2,7 +2,7 @@ var mymap = L.map('mapid', {zoomControl: false}).setView([29.505, 7], 2);
 
 L.tileLayer('https://api.mapbox.com/styles/v1/rospearce/ciwgju4yv00cy2pmqeggx1mx8/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoicm9zcGVhcmNlIiwiYSI6ImNpdm1sczJsZjAwOGMyeW1xNHc4ejJ0N28ifQ.4B24e0_HgfJj4sgqimETqA', {
     attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
-    maxZoom: 6,
+    maxZoom: 5,
 	minZoom: 1,
     id: 'mapbox://styles/rospearce/ciwgju4yv00cy2pmqeggx1mx8',
     accessToken: 'pk.eyJ1Ijoicm9zcGVhcmNlIiwiYSI6ImNpdm1sczJsZjAwOGMyeW1xNHc4ejJ0N28ifQ.4B24e0_HgfJj4sgqimETqA'
@@ -142,7 +142,7 @@ promise.then(function(data) {
 			return L.marker(latlng, {
 				icon: humanHeatIcon,
 				tags: ['Human', 'Heat']
-			}).on('click', onClick);
+			}).on('dblclick', onDoubleClick);
 		},
 					onEachFeature: onEachFeature
 	}).addTo(mymap);
@@ -155,7 +155,7 @@ promise.then(function(data) {
 		return L.marker(latlng, {
 			icon: humanColdIcon,
 			tags: ['Cold/ice', 'Human']
-		}).on('click', onClick);
+		}).on('dblclick', onDoubleClick);
 	},
 			onEachFeature: onEachFeature
 	}).addTo(mymap);
@@ -168,7 +168,7 @@ promise.then(function(data) {
 		return L.marker(latlng, {
 			icon: humanDryIcon,
 			tags: ['Drought', 'Human']
-		}).on('click', onClick);
+		}).on('dblclick', onDoubleClick);
 	},
 	onEachFeature: onEachFeature
 	}).addTo(mymap);
@@ -181,7 +181,7 @@ promise.then(function(data) {
 			return L.marker(latlng, {
 				icon: humanFireIcon,
 				tags: ['Wildfires', 'Human']
-			}).on('click', onClick);
+			}).on('dblclick', onDoubleClick);
 		},
 		onEachFeature: onEachFeature
 	}).addTo(mymap);
@@ -194,7 +194,7 @@ promise.then(function(data) {
 			return L.marker(latlng, {
 				icon: humanStormIcon,
 				tags: ['Storms', 'Human']
-			}).on('click', onClick);
+			}).on('dblclick', onDoubleClick);
 		},
 		onEachFeature: onEachFeature
 	}).addTo(mymap);
@@ -207,7 +207,7 @@ promise.then(function(data) {
 			return L.marker(latlng, {
 				icon: humanRainIcon,
 				tags: ['Rain/flooding', 'Human']
-			}).on('click', onClick);
+			}).on('dblclick', onDoubleClick);
 		},
 		onEachFeature: onEachFeature
 	}).addTo(mymap);
@@ -220,7 +220,7 @@ promise.then(function(data) {
 			return L.marker(latlng, {
 				icon: humanOceanIcon,
 				tags: ['Oceans', 'Human']
-			}).on('click', onClick);
+			}).on('dblclick', onDoubleClick);
 		},
 		onEachFeature: onEachFeature
 	}).addTo(mymap);
@@ -233,7 +233,7 @@ promise.then(function(data) {
 				return L.marker(latlng, {
 					icon: naturalColdIcon,
 					tags: ['Cold/ice', 'Natural']
-				}).on('click', onClick);
+				}).on('dblclick', onDoubleClick);
 			},
 						onEachFeature: onEachFeature 
 	}).addTo(mymap);
@@ -246,7 +246,7 @@ promise.then(function(data) {
 				return L.marker(latlng, {
 					icon: naturalDryIcon,
 					tags: ['Drought', 'Natural']
-				}).on('click', onClick);
+				}).on('dblclick', onDoubleClick);
 			},
 						onEachFeature: onEachFeature 
 	}).addTo(mymap);
@@ -259,7 +259,7 @@ promise.then(function(data) {
 			return L.marker(latlng, {
 				icon: naturalHeatIcon,
 				tags: ['Heat', 'Natural']
-			}).on('click', onClick);
+			}).on('dblclick', onDoubleClick);
 		},
 					onEachFeature: onEachFeature
 	}).addTo(mymap);
@@ -272,7 +272,7 @@ promise.then(function(data) {
 				return L.marker(latlng, {
 					icon: naturalRainIcon,
 					tags: ['Rain/flooding', 'Natural']
-				}).on('click', onClick);
+				}).on('dblclick', onDoubleClick);
 			},
 						onEachFeature: onEachFeature 
 	}).addTo(mymap);
@@ -285,7 +285,7 @@ promise.then(function(data) {
 				return L.marker(latlng, {
 					icon: naturalStormIcon,
 					tags: ['Storms', 'Natural']
-				}).on('click', onClick);
+				}).on('dblclick', onDoubleClick);
 			},
 						onEachFeature: onEachFeature 
 	});
@@ -298,7 +298,7 @@ promise.then(function(data) {
 				return L.marker(latlng, {
 					icon: unknownColdIcon,
 					tags: ['Cold/ice', 'Inconclusive']
-				}).on('click', onClick);
+				}).on('dblclick', onDoubleClick);
 			},
 						onEachFeature: onEachFeature 
 	}).addTo(mymap);
@@ -311,7 +311,7 @@ promise.then(function(data) {
 		return L.marker(latlng, {
 			icon: unknownDryIcon,
 			tags: ['Drought', 'Unknown']
-		}).on('click', onClick);
+		}).on('dblclick', onDoubleClick);
 	},
 	onEachFeature: onEachFeature
 	}).addTo(mymap);
@@ -324,7 +324,7 @@ promise.then(function(data) {
 				return L.marker(latlng, {
 					icon: unknownStormIcon,
 					tags: ['Storms', 'Inconclusive']
-				}).on('click', onClick);
+				}).on('dblclick', onDoubleClick);
 			},
 						onEachFeature: onEachFeature 
 	}).addTo(mymap);
@@ -337,7 +337,7 @@ promise.then(function(data) {
 				return L.marker(latlng, {
 					icon: unknownRainIcon,
 					tags: ['Rain/flooding', 'Inconclusive']
-				}).on('click', onClick);
+				}).on('dblclick', onDoubleClick);
 			},
 						onEachFeature: onEachFeature 
 	}).addTo(mymap);
@@ -350,7 +350,7 @@ promise.then(function(data) {
 			return L.marker(latlng, {
 				icon: unknownHeatIcon,
 				tags: ['Heat', 'Inconclusive']
-			}).on('click', onClick);
+			}).on('dblclick', onDoubleClick);
 		},
 					onEachFeature: onEachFeature
 	}).addTo(mymap);
@@ -359,21 +359,23 @@ promise.then(function(data) {
 
 });
 
-// add zoom on marker click
-
-function onClick(e) {
-    mymap.setView(e.latlng, 4);
-	console.log("click-zoom");
-}
 			 
 function onEachFeature(feature, layer) {
 	// does this feature have a property named popupContent?
 	if (feature.properties) {
-		layer.bindPopup('<h1><b>'+feature.properties.authors+'</h1>Type: </b>'+feature.properties.type+'<br /><b>Location: </b>'+feature.properties.location+'<b><br />Impact: </b>'+feature.properties.impact_description+'<b><br />Summary: </b>'+feature.properties.summary, {closeButton: false, offset: L.point(0, -20)});
-				layer.on('mouseover', function() { layer.openPopup(); });
-				layer.on('mouseout', function() { layer.closePopup(); });
+		layer.bindPopup('<h1><b>'+feature.properties.authors+'</h1>Type: </b>'+feature.properties.type+'<br /><b>Location: </b>'+feature.properties.location+'<b><br />Impact: </b>'+feature.properties.impact_description+'<b><br />Summary: </b>'+feature.properties.summary+'<br /><b><a href="'+feature.properties.link+'">Link</a> '+feature.properties.pdf+'</b>', {closeButton: false, offset: L.point(0, -20)});
+				layer.on('mouseclick', function() { layer.openPopup(); });
+				layer.on('dblclick', function() { layer.openPopup(); });
+				layer.on('mouseclick', function() { layer.closePopup(); });
 	};
 
+}
+
+// add zoom on marker double click
+
+function onDoubleClick(e) {
+    mymap.setView(e.latlng, 5);
+	console.log("click-zoom");
 }
 
 //add zoomHome plugin
