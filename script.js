@@ -363,7 +363,7 @@ promise.then(function(data) {
 function onEachFeature(feature, layer) {
 	// does this feature have a property named popupContent?
 	if (feature.properties) {
-		layer.bindPopup('<h1><b>'+feature.properties.authors+'</h1>Type: </b>'+feature.properties.type+'<br /><b>Location: </b>'+feature.properties.location+'<b><br />Impact: </b>'+feature.properties.impact_description+'<b><br />Summary: </b>'+feature.properties.summary+'<br /><b><a href="'+feature.properties.link+'">Link '+feature.properties.pdf+'</a></b>', {closeButton: false, offset: L.point(0, -20)});
+		layer.bindPopup('<h1><b>'+feature.properties.authors+'</h1>Type: </b>'+feature.properties.type+'<br /><b>Location: </b>'+feature.properties.location+'<b><br />Impact: </b>'+feature.properties.impact_description+'<b><br />Summary: </b>'+feature.properties.summary+'<br /><b><a href="'+feature.properties.link+'" target="_blank">Link '+feature.properties.pdf+'</a></b>', {closeButton: false, offset: L.point(0, -20)});
 				layer.on('mouseclick', function() { layer.openPopup(); });
 				layer.on('dblclick', function() { layer.openPopup(); });
 				layer.on('mouseclick', function() { layer.closePopup(); });
