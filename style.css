@@ -127,6 +127,21 @@ p {
 			margin-right: 5px;
     }
 
+@media (min-width: 1200px) {
+	#key {
+		font-size: 15px;
+		width: 160px;
+	}
+	#title h1 {
+		font-size: 29px;
+	}
+	#title h2 {
+		font-size: 17px;
+	}
+	#title {
+		width: 500px;
+	}
+}
 
 @media (max-width: 800px) {
 	#title {
@@ -146,6 +161,9 @@ p {
 
 	.leaflet-popup-content-wrapper {
 		max-width: 280px;
+	}
+	#key {
+		font-size: 13px;
 	}
 }
 
