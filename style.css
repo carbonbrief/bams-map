@@ -43,6 +43,10 @@ p {
 	font-size: 20px;
 }
 
+.leaflet-popup-content-wrapper .leaflet-popup-content a {
+	color: #2f8fce;
+}
+
 #container {
 	width: 100%;
 }
