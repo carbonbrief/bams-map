@@ -1008,23 +1008,6 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 32.000,15.000 ]
-    },
-    "properties": {
-    "location":"Ethiopia & Southern Africa",
-    "type":"Drought",
-    "impact_description":"Yes. More severe or more likely to occur",
-    "impact":"Yes",
-    "summary":"\"Anthropogenic warming contributed to the 2015 Ethiopian and southern African droughts by increasing local air temperatures and El Niño sea surface temperatures, causing reduced rainfall and runoff, and contributing to severe food insecurity.\"",
-    "authors":"Funk et al., (2016) Bull. Amer. Meteor. Soc., 97 (12), S75-S81",
-    "pdf":"(pdf)",
-    "link":"http://www.ametsoc.net/eee/2015/15_african_drought.pdf"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-       "type": "Point",
        "coordinates":  [ -120.74,47.75 ]
     },
     "properties": {
@@ -1868,7 +1851,7 @@
     "summary":"\"In the case of the 2012 event, the effect of anthropogenic global warming is too small to be detected compared with the variability due to the natural variability of the SST.\"",
     "authors":"Imada et al., (2013) Bull. Amer. Meteor. Soc., 94 (9), S52-S54",
     "pdf":"(pdf)",
-    "link":"http://journals.ametsoc.org/doi/pdf/10.1175/BAMS-D-13-00085.2"
+    "link":"http://journals.ametsoc.org/doi/pdf/10.1175/BAMS-D-13-00085.1"
     }
   },
   {
@@ -1892,7 +1875,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -146.60,47.86 ]
+       "coordinates":  [ 158.818,38.647 ]
     },
     "properties": {
     "location":"Western North Pacific",
@@ -2252,7 +2235,7 @@
        "coordinates":  [ -91.962,30.984 ]
     },
     "properties": {
-    "location":"Lousiana",
+    "location":"Louisiana",
     "type":"Rain/flooding",
     "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
