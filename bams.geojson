@@ -10,9 +10,9 @@
     "properties": {
     "location":"Global temperature",
     "type":"Heat",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
-    "summary":"",
+    "summary":"\"In 2015, record warm surface temperatures were observed for the global mean, India, and the equatorial central Pacific. CMIP5 simulations suggest that for the globe and India, anthropogenic warming was largely to blame.\"",
     "authors":"Kam et al., (2016) Bull. Amer. Meteor. Soc., 97 (12), S61-S65",
     "pdf":"(pdf)",
     "link":"http://www.ametsoc.net/eee/2015/2_gc_heat.pdf"
@@ -26,8 +26,8 @@
     },
     "properties": {
     "location":"South India & Sri Lanka",
-    "type":"Heat",
-    "impact_description":"More severe or more likely to occur",
+    "type":"Oceans",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"In 2015, record warm surface temperatures were observed for the global mean, India, and the equatorial central Pacific. CMIP5 simulations suggest that for the globe and India, anthropogenic warming was largely to blame.\"",
     "authors":"Kam et al., (2016) Bull. Amer. Meteor. Soc., 97 (12), S61-S65",
@@ -44,7 +44,7 @@
     "properties": {
     "location":"Central Europe",
     "type":"Heat",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"Station-based observations and bias-corrected model simulations show that the frequency of short-term heat waves in central Europe has increased, albeit quantitative estimates of risk ratios differ considerably between methods.\"",
     "authors":"Sippel et al., (2016) Bull. Amer. Meteor. Soc., 97 (12), S51-S56",
@@ -56,12 +56,12 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 12.480,50.226 ]
+       "coordinates":  [ 8.480,46.226 ]
     },
     "properties": {
-    "location":"Europe",
+    "location":"Central Europe",
     "type":"Heat",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"A heat wave swept across central Europe in summer 2015. Model experiments suggest that anthropogenic forcings were a major factor in setting the conditions for the development of the 2015 heat wave.\"",
     "authors":"Dong et al., (2016) Bull. Amer. Meteor. Soc., 97 (12), S57-S62",
@@ -78,7 +78,7 @@
     "properties": {
     "location":"Egypt",
     "type":"Heat",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"A combined modeling and observational assessment of the 2015 heat wave in Egypt found that human discomfort increased due to anthropogenic climate change.\"",
     "authors":"Mitchell (2016) Bull. Amer. Meteor. Soc., 97 (12), S70-S74",
@@ -95,7 +95,7 @@
     "properties": {
     "location":"Ethiopia & Southern Africa",
     "type":"Heat",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"Anthropogenic warming contributed to the 2015 Ethiopian and southern African droughts by increasing El Niño SSTs and local air temperatures, causing reduced rainfall and runoff, and contributing to severe food insecurity.\"",
     "authors":"Funk et al., (2016) Bull. Amer. Meteor. Soc., 97 (12), S75-S80",
@@ -112,7 +112,7 @@
     "properties": {
     "location":"India & Pakistan",
     "type":"Heat",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"We find that the deadly heat waves in India and Pakistan in 2015 were exacerbated by anthropogenic climate change. Although the impacts of both events were severe, the events themselves were not connected to each other.\"",
     "authors":"Wehner et al., (2016) Bull. Amer. Meteor. Soc., 97 (12), S81-S86",
@@ -129,7 +129,7 @@
     "properties": {
     "location":"N. W China",
     "type":"Heat",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"The record-breaking heat over northwest China in July 2015 was linked directly to atmospheric general circulation indices and anthropogenic forcing. The latter increased the risk of extreme heat by three-fold.\"",
     "authors":"Miao et al., (2016) Bull. Amer. Meteor. Soc., 97 (12), S97-S101",
@@ -146,7 +146,7 @@
     "properties": {
     "location":"W. China",
     "type":"Heat",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"Human influence has very likely increased the probability of occurrence of the 2015 western China extreme summer temperature events by at least 3-fold and 42-fold for the highest daily maximum and minimum temperatures, respectively.",
     "authors":"Sun et al., (2016) Bull. Amer. Meteor. Soc., 97 (12), S102-S106",
@@ -163,7 +163,7 @@
     "properties": {
     "location":"Japan",
     "type":"Heat",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"The persistent Japanese heat wave that occurred in early August 2015 was mainly attributed to intraseasonal disturbances including tropical cyclones. Anthropogenic warming contributed to an increase in the probability of occurrence.",
     "authors":"Takahashi et al., (2016) Bull. Amer. Meteor. Soc., 97 (12), S107-S112",
@@ -180,7 +180,7 @@
     "properties": {
     "location":"Indonesia",
     "type":"Heat",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"El Niño and human-induced climate change have substantially increased the likelihood of rainfall deficits and high temperatures, respectively, in Indonesia such as those experienced in the drought conditions of July–October 2015.\"",
     "authors":"King et al., (2016) Bull. Amer. Meteor. Soc., 97 (12), S113-S117",
@@ -197,7 +197,7 @@
     "properties": {
     "location":"S. Australia",
     "type":"Heat",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"Anthropogenic climate change was found to have a substantial influence on southern Australia’s extreme heat in October 2015. The relative influence of El Niño conditions was less clear.\"",
     "authors":"Black et al., (2016) Bull. Amer. Meteor. Soc., 97 (12), S118-S121",
@@ -209,12 +209,12 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 133.775,-25.274 ]
+       "coordinates":  [ 124.277,-24.936 ]
     },
     "properties": {
     "location":"Australia",
     "type":"Heat",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"Using a seasonal forecasting framework for attribution, we find that half of the record heat anomaly across Australia in October 2015 can be attributed to increasing CO2, with much of the rest due to internal atmospheric variability.\"",
     "authors":"Hope et al., (2016) Bull. Amer. Meteor. Soc., 97 (12), S122-126",
@@ -231,7 +231,7 @@
     "properties": {
     "location":"UK",
     "type":"Heat",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"Extreme winter sunshine in the United Kingdom, as observed in the record high 2014/15 season, has become more than 1.5 times more likely to occur under the influence of anthropogenic forcings.\"",
     "authors":"Christidis et al., (2016) Bull. Amer. Meteor. Soc., 97 (12), S47-S50",
@@ -248,7 +248,7 @@
     "properties": {
     "location":"Australia",
     "type":"Heat",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"Anthropogenic activity has increased the risk of Australian heatwaves during late autumn similar to the 2014 event by up to 23-fold, compared to climate conditions under no anthropogenic influence.\"",
     "authors":"Perkins & Gibson (2015) Bull. Amer. Meteor. Soc., 96 (12), S154-S157",
@@ -260,12 +260,12 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 15.26,54.53 ]
+       "coordinates":  [ 7.515,46.481 ]
     },
     "properties": {
     "location":"Europe",
     "type":"Heat",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"According to CMIP5 models, the risk of record annual mean warmth in European, northeast Pacific, and northwest Atlantic regions—as occurred in 2014—has been greatly increased by anthropogenic climate change.\"",
     "authors":"Kam et al., (2015) Bull. Amer. Meteor. Soc., 96 (12), S61-S65",
@@ -282,7 +282,7 @@
     "properties": {
     "location":"South Korea",
     "type":"Heat",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"A comparison of observations and multiple global climate models indicates human influence has increased the chance of extreme hot springs in Korea such as the 2014 event by two to three times.\" ",
     "authors":"Min et al., (2015) Bull. Amer. Meteor. Soc., 96 (12), S95-99",
@@ -299,7 +299,7 @@
     "properties": {
     "location":"Adelaide",
     "type":"Heat",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"Anthropogenic climate change very likely increased the likelihood of prolonged heat waves like that experienced in Adelaide in January 2014 by at least 16%. The influence for Melbourne is less clear.\"",
     "authors":"Black et al., (2015) Bull. Amer. Meteor. Soc., 96 (12), S145-S148",
@@ -316,7 +316,7 @@
     "properties": {
     "location":"Brisbane",
     "type":"Heat",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"Climate model simulations for 2014 indicate anthropogenic climate change very likely increased the likelihood of hot and very hot November days in Brisbane by at least 25% and 44% respectively.\"",
     "authors":"King et al., (2015) Bull. Amer. Meteor. Soc., 96 (12), S141-S144",
@@ -333,7 +333,7 @@
     "properties": {
     "location":"Argentina",
     "type":"Heat",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"The Argentinian heat wave of December 2013 was likely caused in part by anthropogenic forcings. These forcings have increased the risk of such an event occurring by a factor of five.\"",
     "authors":"Hannart, A. et al., (2015) Bull. Amer. Meteor. Soc., 96 (12),S41-45",
@@ -350,7 +350,7 @@
     "properties": {
     "location":"Australia",
     "type":"Heat",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"Record high September maximum temperatures over Australia arose from a combination of a strongly anomalous atmospheric circulation pattern, background warming, and dry and warm antecedent land-surface conditions.\"",
     "authors":"Arblaster et al., (2014) Bull. Amer. Meteor. Soc., 95 (9), S37-S41",
@@ -367,7 +367,7 @@
     "properties": {
     "location":"Eastern inland Australia",
     "type":"Heat",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"The record heat of 2013 across inland eastern Australia was caused by a combination of anthropogenic warming and extreme drought.\"",
     "authors":"King et al., (2014) Bull. Amer. Meteor. Soc., 95 (9), S41-S45",
@@ -384,7 +384,7 @@
     "properties": {
     "location":"Australia & far west Pacific",
     "type":"Heat",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"CMIP5 simulations suggest that the extremely warm year observed over Australia and the far western Pacific during 2013 was largely attributable to human forcing of the climate system.\"",
     "authors":"Knutson et al., (2014) Bull. Amer. Meteor. Soc., 95 (9), S26-30",
@@ -401,7 +401,7 @@
     "properties": {
     "location":"Australia",
     "type":"Heat",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"Anthropogenic climate change has caused a very large increase in the likelihood of extreme events such as the record Australia-wide average temperatures in September, spring, and the 2013 calendar year.\"",
     "authors":"Lewis et al., (2014) Bull. Amer. Meteor. Soc., 95 (9), S31-S34",
@@ -418,7 +418,7 @@
     "properties": {
     "location":"Australia",
     "type":"Heat",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"Human activity has increased the risk of experiencing the hot Australian summer of 2012/13, as measured by simulated heat wave frequency and intensity, by two- and three-fold, respectively.\"",
     "authors":"Perkins et al., (2014) Bull. Amer. Meteor. Soc., 95 (9), S34-S37",
@@ -435,7 +435,7 @@
     "properties": {
     "location":"Western Europe",
     "type":"Heat",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"Anthropogenic forcing played a substantial part in western Europe’s hot, dry summer in 2013. North Atlantic sea surface temperatures were likely a factor in the large contrast with summer 2012.\"",
     "authors":"Dong et al., (2014) Bull. Amer. Meteor. Soc., 95 (9), S62-S66",
@@ -452,7 +452,7 @@
     "properties": {
     "location":"China",
     "type":"Heat",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"Comparison based on Coupled Model Intercomparison Project Phase 5 (CMIP5) models suggest a discernible impact of anthropogenic forcing, with internal variability also being important.\"",
     "authors":"Zhou et al., (2014) Bull. Amer. Meteor. Soc., 95 (9), S54-57",
@@ -469,7 +469,7 @@
     "properties": {
     "location":"Japan",
     "type":"Heat",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"Anthropogenic climate change played a significant role in increasing the probability of events such as the heat wave in Japan in 2013.\"",
     "authors":"Imada et al., (2014) Bull. Amer. Meteor. Soc., 95 (9), S52-54",
@@ -486,7 +486,7 @@
     "properties": {
     "location":"South Korea",
     "type":"Heat",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"A comparison of observations and multiple global climate model simulations indicates that extreme hot summer temperatures in Korea have become 10 times more likely due to human influence.\"",
     "authors":"Min et al., (2014) Bull. Amer. Meteor. Soc., 95 (9), S48-S51",
@@ -503,7 +503,7 @@
     "properties": {
     "location":"United States",
     "type":"Heat",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"Our analyses of the CMIP5 global climate model ensemble suggest that the likelihood of extreme July temperature anomalies is greater in the current forcing than in the preindustrial forcing.\"",
     "authors":"Diffenbaugh & Scherer (2013) Bull. Amer. Meteor. Soc., 94 (9), S6-S9",
@@ -519,8 +519,8 @@
     },
     "properties": {
     "location":"Europe",
-    "type":"Heat",
-    "impact_description":"More severe or more likely to occur",
+    "type":"Oceans",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"The degree of decadal variability in these features suggests a role for forcing from outside the dynamical atmosphere, and preliminary numerical experiments suggest that the global SST and low Arctic sea ice extent anomalies are likely to have played a role.\" ",
     "authors":"Dong et al. (2013) Bull. Amer. Meteor. Soc., 94 (9), S28-S32",
@@ -537,24 +537,24 @@
     "properties": {
     "location":"Central England",
     "type":"Heat",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"Therefore, a cold December of –0.7°C is half as likely to occur in the 2000s when compared to the 1960s.\"",
     "authors":"Massey et al., (2012) Bull. Amer. Meteor. Soc., S1057-S1059",
     "pdf":"",
-    "link":""
+    "link":"http://journals.ametsoc.org/doi/full/10.1175/BAMS-D-12-00021.1"
     }
   },
   {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 15.293,48.626 ]
+       "coordinates":  [ 8.293,52.626 ]
     },
     "properties": {
-    "location":"Europe",
+    "location":"United Kingdom, Belgium, the Netherlands, Denmark, Germany and Switzerland",
     "type":"Heat",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"Global warming has made a warm autumn like the one observed in 2006 much more likely by shifting the temperature distribution to higher values.\"",
     "authors":"Van Oldenborgh et al., (2007) Clim. Past",
@@ -569,11 +569,11 @@
        "coordinates":  [ 8.613,49.088 ]
     },
     "properties": {
-    "location":"Europe",
+    "location":"France, Germany, Italy",
     "type":"Heat",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
-    "summary":"\"We estimate it is very likely (confidence level >90%)9 that human influence has at least doubled the risk of a heatwave exceeding this threshold magnitude.\"",
+    "summary":"\"We estimate it is very likely (confidence level >90%) that human influence has at least doubled the risk of a heatwave exceeding this threshold magnitude.\"",
     "authors":"Stott et al., (2004) Nature, 610-4",
     "pdf":"",
     "link":"https://www.nature.com/nature/journal/v432/n7017/full/nature03089.html"
@@ -588,7 +588,7 @@
     "properties": {
     "location":"Russia",
     "type":"Heat",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"For July temperature in Moscow, we estimate...an approximate 80% probability that the 2010 July heat record would not have occurred without climate warming.\"",
     "authors":"Rahmstorf & Coumou (2011) PNAS, 17905-17909",
@@ -605,7 +605,7 @@
     "properties": {
     "location":"Australia",
     "type":"Heat",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"It was very likely (>90% confidence) there was at least a 2.5 times increase in the odds of extreme heat due to human influences using simulations to 2005, and a fivefold increase in this risk using simulations for 2006–2020.\"",
     "authors":"Lewis et al., (2013) Geophysical Research Letters, 3705-3709",
@@ -622,7 +622,7 @@
     "properties": {
     "location":"Eastern China",
     "type":"Heat",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"We estimate that anthropogenic influence has caused a more than 60-fold increase in the likelihood of the extreme warm 2013 summer since the early 1950s.\"",
     "authors":"Sun et al., (2014) Nature Climate Change, 1082-1085",
@@ -639,7 +639,7 @@
     "properties": {
     "location":"Central England",
     "type":"Heat",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"With 90% confidence we find that anthropogenic forcings on the climate have increased the chances of record warm years in Central England by at least 13-fold.\"",
     "authors":"King et al., (2015) Environmental Research Letters, 54002",
@@ -656,7 +656,7 @@
     "properties": {
     "location":"Texas",
     "type":"Heat",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"The likelihood of a given unusually high summer temperature being exceeded was simulated to be about 10 times greater due to anthropogenic emissions.\"",
     "authors":"Rupp et al., (2015) Geophysical Research Letters, 2014GL062683.",
@@ -671,9 +671,9 @@
        "coordinates":  [ -41.484,16.204 ]
     },
     "properties": {
-    "location":"Global",
+    "location":"Global temperature",
     "type":"Heat",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"About 18% of the moderate daily precipitation extremes over land are attributable to the observed temperature increase since pre-industrial times...About 75% of the moderate daily hot extremes over land are attributable to warming.\"",
     "authors":"Fischer & Knutti (2015) Nature Climate Change, 560-564",
@@ -797,7 +797,7 @@
     "summary":"\"Attribution is limited by shortcomings in models in replicating monsoons, teleconnections and blocking.\"",
     "authors":"Trenberth et al., (2012) Journal of Geophysical Research: Atmospheres, D17103",
     "pdf":"",
-    "link":"http://onlinelibrary.wiley.com/store/10.1029/2012JD018020/asset/jgrd18177.pdf?v=1&t=j3bd2z5z&s=6ea5ffba209ed3eae420ac658c3182c82cba0497"
+    "link":"http://onlinelibrary.wiley.com/store/10.1029/2012JD018020/asset/jgrd18177.pdf?v=1&t=j3wx8ubq&s=2f975838d06fb93dccf2d09086a2721151e3c95c"
     }
   },
   {
@@ -809,7 +809,7 @@
     "properties": {
     "location":"North Atlantic US",
     "type":"Cold",
-    "impact_description":"Less severe or less likely to occur",
+    "impact_description":"Yes. Less severe or less likely to occur",
     "impact":"Yes",
     "summary":"\"Despite severe cold waves and record-breaking extreme cold-day occurrences during 2015, no long-term increase in winter daily temperature extremes has occurred in the eastern United States—winters have become warmer and less variable.\"",
     "authors":"Trenary et al., (2016) Bull. Amer. Meteor. Soc., 97 (12), S31-S35",
@@ -826,7 +826,7 @@
     "properties": {
     "location":"Upper Midwest US",
     "type":"Cold",
-    "impact_description":"Less severe or less likely to occur",
+    "impact_description":"Yes. Less severe or less likely to occur",
     "impact":"Yes",
     "summary":"\"The frigid 2013/14 Midwestern winter was 20–100 times less likely than in the 1880s due to long-term warming, while winter temperature variability has shown little long-term change.\"",
     "authors":"Wolter, K. et al., (2015) Bull. Amer. Meteor. Soc., 96 (12), S10-S14",
@@ -843,7 +843,7 @@
     "properties": {
     "location":"UK",
     "type":"Cold",
-    "impact_description":"Less severe or less likely to occur",
+    "impact_description":"Yes. Less severe or less likely to occur",
     "impact":"Yes",
     "summary":"\"Anthropogenic climate change reduced the odds of an extremely cold UK spring in 2013 at least 30 times, as estimated from ensembles of simulations with and without human influences.\"",
     "authors":"Christidis et al., (2014) Bull. Amer. Meteor. Soc., 95 (9), S79-S82",
@@ -860,7 +860,7 @@
     "properties": {
     "location":"UK",
     "type":"Cold",
-    "impact_description":"Less severe or less likely to occur",
+    "impact_description":"Yes. Less severe or less likely to occur",
     "impact":"Yes",
     "summary":"\"Yet while the odds of such an event have lengthened as a result of human influence on climate, such unlikely events can still happen, as the winter of 2010/11 demonstrated.\" ",
     "authors":"Christidis & Stott (2012) Bull. Amer. Meteor. Soc., S1060-S1062",
@@ -945,7 +945,7 @@
     "properties": {
     "location":"Indonesia",
     "type":"Drought",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"El Niño and human-induced climate change have substantially increased the likelihood of rainfall deficits and high temperatures, respectively, in Indonesia such as those experienced in the drought conditions of July–October 2015.\"",
     "authors":"King et al., (2016) Bull. Amer. Meteor. Soc., 97 (12), S113-S117",
@@ -962,7 +962,7 @@
     "properties": {
     "location":"Tasmania",
     "type":"Drought",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"Anthropogenic climate change and El Niño made small but significant contributions to increasing the likelihood of record low rainfall in October 2015 in Tasmania. Atmospheric variability was the main contributor.\"",
     "authors":"Karoly et al., (2016) Bull. Amer. Meteor. Soc., 97 (12), S127-S130",
@@ -979,7 +979,7 @@
     "properties": {
     "location":"Canada",
     "type":"Drought",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"Analysis results indicate that the 2015 extreme drought in western Canada was likely an outcome of anthropogenically influenced warm spring conditions and naturally forced dry weather from May to July.\"",
     "authors":"Szeto et al., (2016) Bull. Amer. Meteor. Soc., 97 (12), S42-S46",
@@ -996,10 +996,27 @@
     "properties": {
     "location":"Ethiopia & Southern Africa",
     "type":"Drought",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"Anthropogenic warming contributed to the 2015 Ethiopian and southern African droughts by increasing local air temperatures and El Niño sea surface temperatures, causing reduced rainfall and runoff, and contributing to severe food insecurity.\"",
     "authors":"Funk et al., (2016) Bull. Amer. Meteor. Soc., 97 (12), S75-S80",
+    "pdf":"(pdf)",
+    "link":"http://www.ametsoc.net/eee/2015/15_african_drought.pdf"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.000,15.000 ]
+    },
+    "properties": {
+    "location":"Ethiopia & Southern Africa",
+    "type":"Drought",
+    "impact_description":"Yes. More severe or more likely to occur",
+    "impact":"Yes",
+    "summary":"\"Anthropogenic warming contributed to the 2015 Ethiopian and southern African droughts by increasing local air temperatures and El Niño sea surface temperatures, causing reduced rainfall and runoff, and contributing to severe food insecurity.\"",
+    "authors":"Funk et al., (2016) Bull. Amer. Meteor. Soc., 97 (12), S75-S81",
     "pdf":"(pdf)",
     "link":"http://www.ametsoc.net/eee/2015/15_african_drought.pdf"
     }
@@ -1013,7 +1030,7 @@
     "properties": {
     "location":"Washington State, US",
     "type":"Drought",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"The 2014/15 snowpack drought resulted from exceedingly high temperatures notwithstanding normal precipitation—a drought type that may reoccur due to accelerated anthropogenic warming and aggravated by naturally driven low precipitation.\"",
     "authors":"Fosu et al., (2016) Bull. Amer. Meteor. Soc., 97 (12), S19-S24",
@@ -1030,7 +1047,7 @@
     "properties": {
     "location":"East Africa",
     "type":"Drought",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"Anthropogenic warming contributed to the 2014 East African drought by increasing East African and west Pacific temperatures, and increasing the gradient between standardized western and central Pacific SST causing reduced rainfall, evapotranspiration, and soil moisture.\"",
     "authors":"Funk et al., (2015) Bull. Amer. Meteor. Soc., 96 (12), S77-S82",
@@ -1047,7 +1064,7 @@
     "properties": {
     "location":"Horn of Africa",
     "type":"Drought",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"Ensemble modelling of the East African 2014 long rains season suggests no anthropogenic influence on the likelihood of low rainfall but clear signals in other drivers of drought.\"",
     "authors":"Marthews et al., (2015) Bull. Amer. Meteor. Soc., 96 (12), S83-S88",
@@ -1064,7 +1081,7 @@
     "properties": {
     "location":"Levant, Syria",
     "type":"Drought",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"A combined modeling and observational study suggests that the persistent rainfall deficit during the 2014 rainy season in southern Levant was made more likely due to anthropogenic climate change.\"",
     "authors":"Bergaoui et al., (2015) Bull. Amer. Meteor. Soc., 96 (12), S66-S70",
@@ -1081,7 +1098,7 @@
     "properties": {
     "location":"North Island, New Zealand",
     "type":"Drought",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"For the 2013 New Zealand drought, evidence from a number of models suggests that the meteorological drivers were more favorable for drought as a result of anthropogenic climate change.\"",
     "authors":"Harrington et al., (2014) Bull. Amer. Meteor. Soc., 95 (9), S45-S48",
@@ -1098,7 +1115,7 @@
     "properties": {
     "location":"Iberian Peninsula",
     "type":"Drought",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"Overall these results agree with previous ones by Hoerling et al. (2012b), who found a tendency toward a drier Mediterranean for the period 1970–2010 in comparison with 1901–70, and that such a trend has been partially driven by the anthropogenic emissions of greenhouse gases and aerosols, although modulated by the NAO phase.\"",
     "authors":"Trigo et al., (2013) Bull. Amer. Meteor. Soc., 94 (9), S41-S45",
@@ -1115,7 +1132,7 @@
     "properties": {
     "location":"South Amazon",
     "type":"Drought",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"It seemed that both human influences and the sea surface temperature (SST) natural variability increased probabilities of the 2010 severe drought in the South Amazon region.\"",
     "authors":"Shiogama et al., (2013) Atmospheric Science Letters, 170-175",
@@ -1132,7 +1149,7 @@
     "properties": {
     "location":"California",
     "type":"Drought",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"There is a traceable anthropogenic warming footprint in the enormous intensity of the anomalous ridge during winter 2013–2014 and the associated drought.\"",
     "authors":"Wang et al., (2014) Geophysical Research Letters, 2014GL059748",
@@ -1149,10 +1166,10 @@
     "properties": {
     "location":"Australia",
     "type":"Drought",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"Although climate models generally suggest that Australia’s Millennium Drought was mostly due to multidecadal variability, some late-twentieth-century changes in climate modes that influence regional rainfall are partially attributable to anthropogenic greenhouse warming.\"",
-    "authors":"Kai et al., (2014) Journal of Climate, 3145-3168",
+    "authors":"Cai et al., (2014) Journal of Climate, 3145-3168",
     "pdf":"",
     "link":"http://journals.ametsoc.org/doi/abs/10.1175/JCLI-D-13-00322.1"
     }
@@ -1166,7 +1183,7 @@
     "properties": {
     "location":"California",
     "type":"Drought",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"This study shows that although low precipitation was the main driver of the WY 2014 drought conditions in California, temperature played an important role in exacerbating the drought.\"",
     "authors":"Shukla et al, (2015) Geophysical Research Letters, 42 (11), 4384–4393",
@@ -1183,7 +1200,7 @@
     "properties": {
     "location":"California",
     "type":"Drought",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"In a new study published in PNAS, Diffenbaugh et al. now add weight to the accumulating evidence that anthropogenic climatic changes are already influencing the frequency, magnitude, and duration of drought in California.\"",
     "authors":"Mann & Gleick (2015) Proceedings of the National Academy of Sciences, 3858-3859",
@@ -1200,7 +1217,7 @@
     "properties": {
     "location":"California",
     "type":"Drought",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"We find that although there has not been a substantial change in the probability of either negative or moderately negative precipitation anomalies in recent decades, the occurrence of drought years has been greater in the past two decades than in the preceding century.\"",
     "authors":"Diffenbaugh et al., (2015) Proceedings of the National Academy of Sciences, 3931-3936",
@@ -1438,7 +1455,7 @@
     "properties": {
     "location":"China",
     "type":"Rain/flooding",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"Anthropogenic climate change increased the probability that a short-duration, intense rainfall events and associated flooding, like the one that occurred in May, would occur in parts of southeast China.\"",
     "authors":"Burke et al., (2016) Bull. Amer. Meteor. Soc., 97 (12), S92-S96",
@@ -1455,7 +1472,7 @@
     "properties": {
     "location":"Southeast Canada",
     "type":"Rain/flooding",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"The collective effects of anthropogenic climate change and artificial pond drainage may have played an important role in producing the extreme flood that occurred during early summer 2014 on the southeastern Canadian Prairies.\"",
     "authors":"Szeto, K. et al., (2015) Bull. Amer. Meteor. Soc., 96 (12), S20-S24",
@@ -1472,7 +1489,7 @@
     "properties": {
     "location":"New Zealand",
     "type":"Rain/flooding",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"The risk of an extreme 5-day July rainfall event over Northland, New Zealand, such as was observed in early July 2014, has likely increased due to anthropogenic influence on climate.\"",
     "authors":"Rosier et al., (2015) Bull. Amer. Meteor. Soc., 96 (12), S136-S140",
@@ -1484,12 +1501,12 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -112.852,41.170 ]
+       "coordinates":  [ -93.852,45.170 ]
     },
     "properties": {
     "location":"North-central & eastern US",
     "type":"Rain/flooding",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"The Coupled Model Intercomparison Project phase 5 model analyses suggest that seasonal and annual mean precipitation extremes occurring during 2013 in north-central and eastern U.S. regions, while primarily attributable to intrinsic variability, were also partly attributable to anthropogenic and natural forcings combined.\"",
     "authors":"Knutson et al., (2014) Bull. Amer. Meteor. Soc., 95 (9), S19-S23",
@@ -1506,7 +1523,7 @@
     "properties": {
     "location":"Northern India",
     "type":"Rain/flooding",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"Cumulative precipitation in northern India in June 2013 was a century-scale event, and evidence for increased probability in the present climate compared to the preindustrial climate is equivocal.\"",
     "authors":"Singh et al., (2014) Bull. Amer. Meteor. Soc., 95 (9), S58-S61",
@@ -1523,7 +1540,7 @@
     "properties": {
     "location":"Northern Europe",
     "type":"Rain/flooding",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"This suggests a contribution of climate change to precipitation rate in northern Europe. We conjecture that such a trend could be due to precipitation rates within the cyclonic patterns, which convey more moisture because of increased temperatures.\"",
     "authors":"Yiou et al., (2013) Bull. Amer. Meteor. Soc., 94 (9), S39-S41",
@@ -1540,7 +1557,7 @@
     "properties": {
     "location":"Golden Bay, New Zealand",
     "type":"Rain/flooding",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"This analysis indicates that the total moisture available for precipitation in the Golden Bay/Nelson extreme rainfall event of December 2011 was 1%–5% higher as a result of the emission of anthropogenic greenhouse gases.\"",
     "authors":"Dean et al., (2013) Bull. Amer. Meteor. Soc., 94 (9), S61-S63",
@@ -1557,7 +1574,7 @@
     "properties": {
     "location":"England",
     "type":"Rain/flooding",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"For all but one catchment, emissions are likely to have led to an increased chance of flooding in the October–December period.\"",
     "authors":"Kay et al., (2011) Journal of Hydrology, 97-112",
@@ -1574,7 +1591,7 @@
     "properties": {
     "location":"England",
     "type":"Rain/flooding",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"In nine out of ten cases our model results indicate that twentieth-century anthropogenic greenhouse gas emissions increased the risk of floods occurring in England and Wales in autumn 2000 by more than 20%, and in two out of three cases by more than 90%\"",
     "authors":"Pall et al., (2011) Nature, 382-385",
@@ -1591,7 +1608,7 @@
     "properties": {
     "location":"Wales",
     "type":"Rain/flooding",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"In nine out of ten cases our model results indicate that twentieth-century anthropogenic greenhouse gas emissions increased the risk of floods occurring in England and Wales in autumn 2000 by more than 20%, and in two out of three cases by more than 90%\"",
     "authors":"Pall et al., (2011) Nature, 382-386",
@@ -1608,7 +1625,7 @@
     "properties": {
     "location":"Northeast Colorado",
     "type":"Rain/flooding",
-    "impact_description":"Less severe or less likely to occur",
+    "impact_description":"Yes. Less severe or less likely to occur",
     "impact":"Yes",
     "summary":"\"The probability for an extreme five-day September rainfall event over northeast Colorado, as was observed in early September 2013, has likely decreased due to climate change.\"",
     "authors":"Hoerling et al., (2014) Bull. Amer. Meteor. Soc., 95 (9), S15-S18",
@@ -1645,7 +1662,7 @@
     "impact_description":"No discernible human influence",
     "impact":"No",
     "summary":"\"Extreme one-day rainfall caused widespread flooding in Chennai, India, in December 2015. No effect of global warming was detected, likely caused by aerosols counteracting greenhouse gases up to now.\"",
-    "authors":"Oldenborgh et al., (2016) Bull. Amer. Meteor. Soc., 97 (12), S87-S91",
+    "authors":"van Oldenborgh et al., (2016) Bull. Amer. Meteor. Soc., 97 (12), S87-S91",
     "pdf":"(pdf)",
     "link":"http://www.ametsoc.net/eee/2015/17_india_precip.pdf"
     }
@@ -1730,7 +1747,7 @@
     "impact_description":"No discernible human influence",
     "impact":"No",
     "summary":"\"In summary, we detect limited evidence of a change in the relationship between ENSO and SE Australia extreme rainfall, or of a change in extreme rainfall itself, that may be attributed to anthropogenic climate change.\"",
-    "authors":"King et al., (2013) S55-S58",
+    "authors":"King et al., (2013) Bull. Amer. Meteor. Soc., 94 (9), S55-S58",
     "pdf":"(pdf)",
     "link":"http://journals.ametsoc.org/doi/pdf/10.1175/BAMS-D-13-00085.1"
     }
@@ -1747,7 +1764,7 @@
     "impact_description":"No discernible human influence",
     "impact":"No",
     "summary":"\"Neither in the precipitation observations nor in climate models is there a trend in mean or variability up to now, so climate change cannot be shown to have played any role in this event.\"",
-    "authors":"Van Oldenborgh et al., (2012) Bull. Amer. Meteor. Soc., S1047-S1049",
+    "authors":"van Oldenborgh et al., (2012) Bull. Amer. Meteor. Soc., S1047-S1049",
     "pdf":"",
     "link":"http://journals.ametsoc.org/doi/full/10.1175/BAMS-D-12-00021.1"
     }
@@ -1850,8 +1867,8 @@
     "impact":"Maybe",
     "summary":"\"In the case of the 2012 event, the effect of anthropogenic global warming is too small to be detected compared with the variability due to the natural variability of the SST.\"",
     "authors":"Imada et al., (2013) Bull. Amer. Meteor. Soc., 94 (9), S52-S54",
-    "pdf":"",
-    "link":""
+    "pdf":"(pdf)",
+    "link":"http://journals.ametsoc.org/doi/pdf/10.1175/BAMS-D-13-00085.2"
     }
   },
   {
@@ -1880,7 +1897,7 @@
     "properties": {
     "location":"Western North Pacific",
     "type":"Tropical cyclones",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"The extreme value of the 2015 western North Pacific (WNP) accumulated cyclone energy (ACE) was mainly caused by the sea surface warming in the eastern and central Pacific, with the anthropogenic forcing largely increasing the odds of the occurrence of this event.\"",
     "authors":"Zhang et al., (2016) Bull. Amer. Meteor. Soc., 97 (12), S131-S135",
@@ -1897,7 +1914,7 @@
     "properties": {
     "location":"Hawaii",
     "type":"Tropical cyclones",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"New climate simulations suggest that the extremely active 2014 Hawaiian hurricane season was made substantially more likely by anthropogenic forcing, but that natural variability of El Niño was also partially involved.\"",
     "authors":"Murakami et al., (2015) Bull. Amer. Meteor. Soc., 96 (12), S115-S119",
@@ -1948,7 +1965,7 @@
     "properties": {
     "location":"Alaska",
     "type":"Wildfire",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"The 2015 Alaska fire season burned the second largest number of acres since records began in 1940. Human-induced climate change may have increased the risk of a fire season of this severity by 34%–60%.\"",
     "authors":"Partain et al. (2016) Bull. Amer. Meteor. Soc., 97 (12), S14-S18",
@@ -1965,7 +1982,7 @@
     "properties": {
     "location":"California",
     "type":"Wildfire",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"The fire season in northern California during 2014 was the second largest in terms of burned areas since 1996. An increase in fire risk in California is attributable to human-induced climate change.\"",
     "authors":"Yoon et al., (2015) Bull. Amer. Meteor. Soc., 96 (12), S5-S9",
@@ -1982,7 +1999,7 @@
     "properties": {
     "location":"Arctic",
     "type":"Snow and ice",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"The record low Northern Hemisphere (NH) winter sea ice maximum stemmed from a strong interannual surface anomaly in the Pacific sector, but it would not have been reached without long-term climate change.\"",
     "authors":"Fučkar et al., (2016) Bull. Amer. Meteor. Soc., 97 (12), S136-S140",
@@ -1999,7 +2016,7 @@
     "properties": {
     "location":"Arctic",
     "type":"Snow and ice",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"Our modeling results indicate that the exceptional 2012 sea ice loss was primarily due to the sea ice memory and to the positive feedback of the warm atmospheric conditions, both contributing approximately equally.\"",
     "authors":"Guemas et al., (2013) Bull. Amer. Meteor. Soc., 94 (9), S20-S22",
@@ -2016,7 +2033,7 @@
     "properties": {
     "location":"Arctic",
     "type":"Snow and ice",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"The observed 2012 record low in ASIE is extremely unlikely to have occurred due to internal climate variability alone, according to the models.\"",
     "authors":"Zhang & Knutson (2013) Bull. Amer. Meteor. Soc., 94 (9), S23-S26",
@@ -2033,7 +2050,7 @@
     "properties": {
     "location":"South Dakota",
     "type":"Snow and ice",
-    "impact_description":"Less severe or less likely to occur",
+    "impact_description":"Yes. Less severe or less likely to occur",
     "impact":"Yes",
     "summary":"\"An early October blizzard in South Dakota is determined to be climatologically anomalous. Climate models suggest that early autumn extreme snowfall events in western South Dakota are less likely due to anthropogenic climate change.\"",
     "authors":"Edwards et al., (2014) Bull. Amer. Meteor. Soc., 95 (9), S23-S26",
@@ -2084,7 +2101,7 @@
     "properties": {
     "location":"Miami, Florida",
     "type":"Oceans",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"The probability of a 0.57-m tidal flood within the Miami region has increased by >500% since 1994 from a 10.9-cm sea level rise (SLR)-related trend in monthly highest tides.\"",
     "authors":"Sweet et al., (2016) Bull. Amer. Meteor. Soc., 97 (12), S25-S30",
@@ -2101,7 +2118,7 @@
     "properties": {
     "location":"W. tropical & NE Pacific",
     "type":"Oceans",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"CMIP5 models suggest that human influence has increased the probability of regional high SST extremes over the western tropical and northeast Pacific Ocean during the 2014 calendar year and summer.\"",
     "authors":"Weller et al., (2015) Bull. Amer. Meteor. Soc., 96 (12), S100-S104",
@@ -2118,7 +2135,7 @@
     "properties": {
     "location":"NW Atlantic & NE Pacific",
     "type":"Oceans",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"According to CMIP5 models, the risk of record annual mean warmth in European, northeast Pacific, and northwest Atlantic regions—as occurred in 2014—has been greatly increased by anthropogenic climate change.\"",
     "authors":"Kam et al., (2015) Bull. Amer. Meteor. Soc., 96 (12), S61-S65",
@@ -2135,7 +2152,7 @@
     "properties": {
     "location":"Off Southern Australia",
     "type":"Oceans",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"It is likely that human influences on climate increased the odds of the extreme high pressure anomalies south of Australia in August 2014 that were associated with frosts, lowland snowfalls and reduced rainfall.\"",
     "authors":"Grose et al., (2015) Bull. Amer. Meteor. Soc., 96 (12), S158-S162",
@@ -2152,7 +2169,7 @@
     "properties": {
     "location":"Hurricane Sandy, eastern US seaboard",
     "type":"Oceans",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"Accordingly, we estimate that relative sea level over 1950–2012 from global SLR (thermal expansion and ice melt), VLM (subsidence), and ocean circulation variability has contributed to a one- to two-thirds decrease in Sandy-level event recurrences.\"",
     "authors":"Sweet et al., (2013) Bull. Amer. Meteor. Soc., 94 (9), S17-S20",
@@ -2169,7 +2186,7 @@
     "properties": {
     "location":"Nepal",
     "type":"Storms",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"The Himalayan snowstorm of October 2014 resulted from the unusual merger of a tropical cyclone with an upper trough, and their collective changes under climate warming have increased the odds for similar events.\"",
     "authors":"Wang et al., (2015) Bull. Amer. Meteor. Soc., 96 (12), S89-94",
@@ -2237,7 +2254,7 @@
     "properties": {
     "location":"Lousiana",
     "type":"Rain/flooding",
-    "impact_description":"More severe or more likely to occur",
+    "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"“Taking into account all modeling results, the probability of an event like the one in south Louisiana in 2016 has increased at least by a factor of 1.4 due to radiative forcing.”",
     "authors":"van de Wiel et al., (2017) Hydrology and Earth System Sciences, 21, 897-921",
