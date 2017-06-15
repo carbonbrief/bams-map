@@ -279,7 +279,7 @@ promise.then(function(data) {
 
 	var naturalStorm = L.geoJson(data, {
 			filter: function(feature, layer) {
-				return (feature.properties.impact == "No" && feature.properties.type == "Rain/flooding");
+				return (feature.properties.impact == "No" && (feature.properties.type == "Tropical cyclones" || feature.properties.type == "Storms" ));
 			},
 			pointToLayer: function(feature, latlng) {
 				return L.marker(latlng, {
@@ -288,7 +288,7 @@ promise.then(function(data) {
 				}).on('dblclick', onDoubleClick);
 			},
 						onEachFeature: onEachFeature 
-	});
+	}).addTo(mymap);;
 
 	var unknownCold = L.geoJson(data, {
 			filter: function(feature, layer) {
@@ -318,7 +318,7 @@ promise.then(function(data) {
 									
 	var unknownStorm = L.geoJson(data, {
 			filter: function(feature, layer) {
-				return (feature.properties.impact == "Maybe" && feature.properties.type == "Rain/flooding");
+				return (feature.properties.impact == "Maybe" && (feature.properties.type == "Tropical cyclones" || feature.properties.type == "Storms" ));
 			},
 			pointToLayer: function(feature, latlng) {
 				return L.marker(latlng, {
