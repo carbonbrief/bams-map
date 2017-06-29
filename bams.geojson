@@ -2287,7 +2287,7 @@
     },
     "properties": {
     "location":"Boulder, Colorado",
-    "type":"Rainfall/flooding",
+    "type":"Rain/flooding",
     "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"[W]e deduce an increase in the likelihood of extreme one-day precipitation but of a smaller magnitude than what would be expected in a warming world according to the Clausius–Clapeyron relation. For five-day extremes, we are unable to detect a change in likelihood.\"",
@@ -2372,7 +2372,7 @@
     },
     "properties": {
     "location":"Southern England",
-    "type":"Rainfall/flooding",
+    "type":"Rain/flooding",
     "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"In a large ensemble of climate model simulations, we find that, as well as increasing the amount of moisture the atmosphere can hold, anthropogenic warming caused a small but significant increase in the number of January days with westerly flow, both of which increased extreme precipitation.\"",
@@ -2396,6 +2396,40 @@
     "authors":"Kam et al., (2015) Bull. Amer. Meteor. Soc., 96 (12), S61-S65",
     "pdf":"",
     "link":"http://journals.ametsoc.org/doi/pdf/10.1175/BAMS-ExplainingExtremeEvents2014.1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -86.044922,31.311408 ]
+    },
+    "properties": {
+    "location":"Southwestern US",
+    "type":"Heat",
+    "impact_description":"Yes. More severe or more likely to occur",
+    "impact":"Yes",
+    "summary":"\"It was suggested that both the anthropogenic warming and an atmospheric circulation regime related to the natural variability of SST and SIC made the heat wave event more likely.\"",
+    "authors":"Shiogama et al., (2014) JSTage:SOLA, 10, 122-126",
+    "pdf":"",
+    "link":"https://www.jstage.jst.go.jp/article/sola/10/0/10_2014-025/_article"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.124023,39.417099 ]
+    },
+    "properties": {
+    "location":"California",
+    "type":"Drought",
+    "impact_description":"Yes. More severe or more likely to occur",
+    "impact":"Yes",
+    "summary":"\"[A] long-term warming trend likely contributed to surface moisture deficits during the drought. As such, the precipitation deficit during the drought was dominated by natural variability.\"",
+    "authors":"Seager et al., (2015)",
+    "pdf":"",
+    "link":"http://journals.ametsoc.org/doi/abs/10.1175/JCLI-D-14-00860.1"
     }
   }
 ]
