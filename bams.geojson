@@ -557,7 +557,7 @@
     "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"Global warming has made a warm autumn like the one observed in 2006 much more likely by shifting the temperature distribution to higher values.\"",
-    "authors":"Van Oldenborgh et al., (2007) Clim. Past",
+    "authors":"Van Oldenborgh et al., (2007) Climate of the Past, 3, 659-668",
     "pdf":"",
     "link":"http://www.clim-past.net/3/659/2007/cp-3-659-2007.html"
     }
@@ -574,7 +574,7 @@
     "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"We estimate it is very likely (confidence level >90%) that human influence has at least doubled the risk of a heatwave exceeding this threshold magnitude.\"",
-    "authors":"Stott et al., (2004) Nature, 610-4",
+    "authors":"Stott et al., (2004) Nature, 432, 610-614",
     "pdf":"",
     "link":"https://www.nature.com/nature/journal/v432/n7017/full/nature03089.html"
     }
@@ -591,7 +591,7 @@
     "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"For July temperature in Moscow, we estimate...an approximate 80% probability that the 2010 July heat record would not have occurred without climate warming.\"",
-    "authors":"Rahmstorf & Coumou (2011) PNAS, 17905-17909",
+    "authors":"Rahmstorf & Coumou (2011) PNAS, 108 (44), 17905.",
     "pdf":"",
     "link":"http://www.pnas.org/content/108/44/17905.abstract"
     }
@@ -608,7 +608,7 @@
     "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"It was very likely (>90% confidence) there was at least a 2.5 times increase in the odds of extreme heat due to human influences using simulations to 2005, and a fivefold increase in this risk using simulations for 2006–2020.\"",
-    "authors":"Lewis et al., (2013) Geophysical Research Letters, 3705-3709",
+    "authors":"Lewis et al., (2013) Geophysical Research Letters, 40 (14), 3705-3709",
     "pdf":"",
     "link":"http://onlinelibrary.wiley.com/doi/10.1002/grl.50673/abstract"
     }
@@ -625,7 +625,7 @@
     "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"We estimate that anthropogenic influence has caused a more than 60-fold increase in the likelihood of the extreme warm 2013 summer since the early 1950s.\"",
-    "authors":"Sun et al., (2014) Nature Climate Change, 1082-1085",
+    "authors":"Sun et al., (2014) Nature Climate Change, 4, 1082-1085",
     "pdf":"",
     "link":"http://www.nature.com/nclimate/journal/v4/n12/full/nclimate2410.html"
     }
@@ -642,7 +642,7 @@
     "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"With 90% confidence we find that anthropogenic forcings on the climate have increased the chances of record warm years in Central England by at least 13-fold.\"",
-    "authors":"King et al., (2015) Environmental Research Letters, 54002",
+    "authors":"King et al., (2015) Environmental Research Letters, 10 (5), 54002",
     "pdf":"",
     "link":"http://iopscience.iop.org/article/10.1088/1748-9326/10/5/054002"
     }
@@ -659,7 +659,7 @@
     "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"The likelihood of a given unusually high summer temperature being exceeded was simulated to be about 10 times greater due to anthropogenic emissions.\"",
-    "authors":"Rupp et al., (2015) Geophysical Research Letters, 2014GL062683.",
+    "authors":"Rupp et al., (2015) Geophysical Research Letters, 42 (7), 2392–2400",
     "pdf":"",
     "link":"http://onlinelibrary.wiley.com/doi/10.1002/2014GL062683/abstract"
     }
@@ -676,7 +676,7 @@
     "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"About 18% of the moderate daily precipitation extremes over land are attributable to the observed temperature increase since pre-industrial times...About 75% of the moderate daily hot extremes over land are attributable to warming.\"",
-    "authors":"Fischer & Knutti (2015) Nature Climate Change, 560-564",
+    "authors":"Fischer & Knutti (2015) Nature Climate Change, 5, 560-564",
     "pdf":"",
     "link":"http://www.nature.com/nclimate/journal/v5/n6/full/nclimate2617.html"
     }
@@ -693,7 +693,7 @@
     "impact_description":"No discernible human influence",
     "impact":"No",
     "summary":"\"Analysis of forced model simulations indicates that neither human influences nor other slowly evolving ocean boundary conditions contributed substantially to the magnitude of this heat wave.\"",
-    "authors":"Dole et al., (2011) Geophysical Research Letters",
+    "authors":"Dole et al., (2011) Geophysical Research Letters, 38, L06702",
     "pdf":"(pdf)",
     "link":"https://www.esrl.noaa.gov/psd/people/tao.zhang/2010GL046582.pdf"
     }
@@ -797,7 +797,7 @@
     "summary":"\"Attribution is limited by shortcomings in models in replicating monsoons, teleconnections and blocking.\"",
     "authors":"Trenberth et al., (2012) Journal of Geophysical Research: Atmospheres, D17103",
     "pdf":"",
-    "link":"http://onlinelibrary.wiley.com/store/10.1029/2012JD018020/asset/jgrd18177.pdf?v=1&t=j3wx8ubq&s=2f975838d06fb93dccf2d09086a2721151e3c95c"
+    "link":"http://onlinelibrary.wiley.com/doi/10.1029/2012JD018020/abstract"
     }
   },
   {
@@ -1118,7 +1118,7 @@
     "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"It seemed that both human influences and the sea surface temperature (SST) natural variability increased probabilities of the 2010 severe drought in the South Amazon region.\"",
-    "authors":"Shiogama et al., (2013) Atmospheric Science Letters, 170-175",
+    "authors":"Shiogama et al., (2013) Atmospheric Science Letters, 14 (3), 170-175",
     "pdf":"",
     "link":"http://onlinelibrary.wiley.com/doi/10.1002/asl2.435/abstract"
     }
@@ -1135,7 +1135,7 @@
     "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"There is a traceable anthropogenic warming footprint in the enormous intensity of the anomalous ridge during winter 2013–2014 and the associated drought.\"",
-    "authors":"Wang et al., (2014) Geophysical Research Letters, 2014GL059748",
+    "authors":"Wang et al., (2014) Geophysical Research Letters, 41 (9), 3220–3226",
     "pdf":"",
     "link":"http://onlinelibrary.wiley.com/doi/10.1002/2014GL059748/abstract"
     }
@@ -1186,7 +1186,7 @@
     "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"In a new study published in PNAS, Diffenbaugh et al. now add weight to the accumulating evidence that anthropogenic climatic changes are already influencing the frequency, magnitude, and duration of drought in California.\"",
-    "authors":"Mann & Gleick (2015) Proceedings of the National Academy of Sciences, 3858-3859",
+    "authors":"Mann & Gleick (2015) Proceedings of the National Academy of Sciences, 112 (13), 3858-3859",
     "pdf":"",
     "link":"http://www.pnas.org/content/112/13/3858"
     }
@@ -1203,7 +1203,7 @@
     "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"We find that although there has not been a substantial change in the probability of either negative or moderately negative precipitation anomalies in recent decades, the occurrence of drought years has been greater in the past two decades than in the preceding century.\"",
-    "authors":"Diffenbaugh et al., (2015) Proceedings of the National Academy of Sciences, 3931-3936",
+    "authors":"Diffenbaugh et al., (2015) Proceedings of the National Academy of Sciences, 112 (13), 3931-3936",
     "pdf":"",
     "link":"http://www.pnas.org/content/112/13/3931.abstract"
     }
@@ -1271,7 +1271,7 @@
     "impact_description":"No discernible human influence",
     "impact":"No",
     "summary":"\"It is interesting to note that while SST-driven simulations of the 2011 March–May (MAM) season clearly show the important role played by the warm western Pacific (Lyon and DeWitt 2012), and while the new CMIP5 SSTs exhibit substantial warming during the 1990s and 2000s, these increasing SSTs do not appear to produce corresponding large changes in evaporation or rainfall over eastern Africa.\"",
-    "authors":"Funk et al., (2013) Bull. Amer. Meteor. Soc., S1049-S1051",
+    "authors":"Funk et al., (2012) Bull. Amer. Meteor. Soc., S1049-S1051",
     "pdf":"",
     "link":"http://journals.ametsoc.org/doi/full/10.1175/BAMS-D-12-00021.1"
     }
@@ -1288,7 +1288,7 @@
     "impact_description":"No discernible human influence",
     "impact":"No",
     "summary":"\"It is concluded that the extreme Great Plains drought did not require extreme external forcings and could plausibly have arisen from atmospheric noise alone.\"",
-    "authors":"Kumar et al., (2013) Geophysical Research Letters, 3440-3445",
+    "authors":"Kumar et al., (2013) Geophysical Research Letters, 40 (13) 3440-3445",
     "pdf":"",
     "link":"http://onlinelibrary.wiley.com/doi/10.1002/grl.50657/abstract"
     }
@@ -1390,7 +1390,7 @@
     "impact_description":"Insufficient data/inconclusive",
     "impact":"Maybe",
     "summary":"\"While we can provide evidence that the risk of hot and dry conditions has increased, we cannot say that the 2011 Texas drought and heat wave was \"extremely unlikely\" (in any absolute sense) to have occurred before this recent warming.\"",
-    "authors":"Rupp et al., (2013) Bull. Amer. Meteor. Soc., S1052-S1054",
+    "authors":"Rup et al., (2012) Bull. Amer. Meteor. Soc., S1052-S1054",
     "pdf":"",
     "link":"http://journals.ametsoc.org/doi/full/10.1175/BAMS-D-12-00021.1"
     }
@@ -1407,7 +1407,7 @@
     "impact_description":"Insufficient data/inconclusive",
     "impact":"Maybe",
     "summary":"\"Comparing these modeled distributions to the observed rainfall, no evidence was found for human influence on the 2010 short rains, with their failure being affected by La Niña.\"",
-    "authors":"Lott et al., (2013) Geophysical Research Letters, 1177-1181",
+    "authors":"Lott et al., (2013) Geophysical Research Letters, 40 (6), 1177-1181",
     "pdf":"",
     "link":"http://onlinelibrary.wiley.com/doi/10.1002/grl.50235/abstract"
     }
@@ -1560,7 +1560,7 @@
     "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"For all but one catchment, emissions are likely to have led to an increased chance of flooding in the October–December period.\"",
-    "authors":"Kay et al., (2011) Journal of Hydrology, 97-112",
+    "authors":"Kay et al., (2011) Journal of Hydrology, 406 (1-2), 97-112",
     "pdf":"",
     "link":"http://www.sciencedirect.com/science/article/pii/S0022169411004033"
     }
@@ -1577,7 +1577,7 @@
     "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"In nine out of ten cases our model results indicate that twentieth-century anthropogenic greenhouse gas emissions increased the risk of floods occurring in England and Wales in autumn 2000 by more than 20%, and in two out of three cases by more than 90%\"",
-    "authors":"Pall et al., (2011) Nature, 382-385",
+    "authors":"Pall et al., (2011) Nature, 470, 382-385",
     "pdf":"",
     "link":"https://www.nature.com/nature/journal/v470/n7334/full/nature09762.html"
     }
@@ -1594,7 +1594,7 @@
     "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
     "summary":"\"In nine out of ten cases our model results indicate that twentieth-century anthropogenic greenhouse gas emissions increased the risk of floods occurring in England and Wales in autumn 2000 by more than 20%, and in two out of three cases by more than 90%\"",
-    "authors":"Pall et al., (2011) Nature, 382-386",
+    "authors":"Pall et al., (2011) Nature, 470, 382-385",
     "pdf":"",
     "link":"https://www.nature.com/nature/journal/v470/n7334/full/nature09762.html"
     }
@@ -1866,7 +1866,7 @@
     "impact_description":"Insufficient data/inconclusive",
     "impact":"Maybe",
     "summary":"\"Despite the potential contribution of all factors examined here, the extreme magnitude of the event appears to arise mainly from unforced internal climatic variations.\"",
-    "authors":"Christidis et al., (2013) S58-S61",
+    "authors":"Christidis et al., (2013) Bull. Amer. Meteor. Soc., 94 (9), S58-S61",
     "pdf":"(pdf)",
     "link":"http://journals.ametsoc.org/doi/pdf/10.1175/BAMS-D-13-00085.1"
     }
@@ -2116,7 +2116,7 @@
        "coordinates":  [ -46.758,53.690 ]
     },
     "properties": {
-    "location":"NW Atlantic & NE Pacific",
+    "location":"NW Atlantic ",
     "type":"Oceans",
     "impact_description":"Yes. More severe or more likely to occur",
     "impact":"Yes",
@@ -2243,6 +2243,159 @@
     "authors":"van de Wiel et al., (2017) Hydrology and Earth System Sciences, 21, 897-921",
     "pdf":"",
     "link":"http://www.hydrol-earth-syst-sci.net/21/897/2017/hess-21-897-2017-discussion.html"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 141.855,66.494 ]
+    },
+    "properties": {
+    "location":"Russia",
+    "type":"Heat",
+    "impact_description":"Yes. More severe or more likely to occur",
+    "impact":"Yes",
+    "summary":"\"The difference in conclusion between these two papers illustrates the importance of specifying precisely what question is being asked in addressing the issue of attribution of individual weather events to external drivers of climate.\"",
+    "authors":"Otto et al., (2012) Geophysical Research Letters, 39, L04702",
+    "pdf":"",
+    "link":"http://onlinelibrary.wiley.com/doi/10.1029/2011GL050422/abstract?systemMessage=Wiley+Online+Library+will+be+unavailable+on+Saturday+01st+July+from+03.00-09.00+EDT+and+on+Sunday+2nd+July+03.00-06.00+EDT+for+essential+maintenance.++Apologies+for+the+inconvenience."
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -120.542,45.605 ]
+    },
+    "properties": {
+    "location":"Oregon & Washington",
+    "type":"Drought",
+    "impact_description":"Yes. More severe or more likely to occur",
+    "impact":"Yes",
+    "summary":"\"[B]oth human influence and sea surface temperature (SST) anomalies contributed strongly to the risk of snow drought in Oregon and Washington: the contribution of SST anomalies was about twice that of human influence.\"",
+    "authors":"Mote et al., (2016) Geophysical Research Letters, 43 (20), 10,980–10,988",
+    "pdf":"",
+    "link":"http://onlinelibrary.wiley.com/doi/10.1002/2016GL069965/abstract?systemMessage=Wiley+Online+Library+will+be+unavailable+on+Saturday+01st+July+from+03.00-09.00+EDT+and+on+Sunday+2nd+July+03.00-06.00+EDT+for+essential+maintenance.++Apologies+for+the+inconvenience."
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -105.271,40.015 ]
+    },
+    "properties": {
+    "location":"Boulder, Colorado",
+    "type":"Rainfall/flooding",
+    "impact_description":"Yes. More severe or more likely to occur",
+    "impact":"Yes",
+    "summary":"\"[W]e deduce an increase in the likelihood of extreme one-day precipitation but of a smaller magnitude than what would be expected in a warming world according to the Clausius–Clapeyron relation. For five-day extremes, we are unable to detect a change in likelihood.\"",
+    "authors":"Eden et al., (2016) Environmental Research Letters, 11 (12)",
+    "pdf":"",
+    "link":"http://iopscience.iop.org/article/10.1088/1748-9326/11/12/124009/meta"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 4.746,49.919 ]
+    },
+    "properties": {
+    "location":"Europe",
+    "type":"Heat",
+    "impact_description":"Yes. More severe or more likely to occur",
+    "impact":"Yes",
+    "summary":"\"The year 2014 broke the record for the warmest yearly average temperature in Europe...Each method shows a very strong anthropogenic influence on the event over Europe.\"",
+    "authors":"Uhe et al., (2016) Geophysical Research Letters, 43 (16), 8685–8693,",
+    "pdf":"",
+    "link":"http://onlinelibrary.wiley.com/doi/10.1002/2016GL069568/abstract?systemMessage=Wiley+Online+Library+will+be+unavailable+on+Saturday+01st+July+from+03.00-09.00+EDT+and+on+Sunday+2nd+July+03.00-06.00+EDT+for+essential+maintenance.++Apologies+for+the+inconvenience."
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -114.785156,34.369511 ]
+    },
+    "properties": {
+    "location":"California",
+    "type":"Drought",
+    "impact_description":"Yes. Less severe or less likely to occur",
+    "impact":"Yes",
+    "summary":"\"The results thus indicate that the net effect of climate change has made agricultural drought less likely and that the current severe impacts of drought on California’s agriculture have not been substantially caused by long-term climate changes.\"",
+    "authors":"Cheng et al., (2015) Journal of Climate",
+    "pdf":"",
+    "link":"http://journals.ametsoc.org/doi/abs/10.1175/JCLI-D-15-0260.1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 88.787868,30.153361 ]
+    },
+    "properties": {
+    "location":"Tibetan Plateau",
+    "type":"Drought",
+    "impact_description":"Yes. More severe or more likely to occur",
+    "impact":"Yes",
+    "summary":"\"Ensemble simulations of climate models demonstrate a robust increase in the dry and warm meteorological conditions seen during the 2009 SEPTP autumn drought due to anthropogenic global warming.\"",
+    "authors":"Ma et al., (2017) Journal of Climate",
+    "pdf":"",
+    "link":"http://journals.ametsoc.org/doi/abs/10.1175/JCLI-D-16-0636.1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 122.387695,13.740719 ]
+    },
+    "properties": {
+    "location":"Typhoon Haiyan, Leyfe Gulf, Philippines",
+    "type":"Storms",
+    "impact_description":"Yes. More severe or more likely to occur",
+    "impact":"Yes",
+    "summary":"\"The result indicates that the worst case scenario of a storm surge in the Gulf of Leyte may be worse by 20%, though changes in frequency of such events are not accounted for here.\"",
+    "authors":"Takayabu et al., (2015) Environmental Research Letters, 10, 064011",
+    "pdf":"",
+    "link":"http://iopscience.iop.org/article/10.1088/1748-9326/10/6/064011/meta"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -2.416992,50.784233 ]
+    },
+    "properties": {
+    "location":"Southern England",
+    "type":"Rainfall/flooding",
+    "impact_description":"Yes. More severe or more likely to occur",
+    "impact":"Yes",
+    "summary":"\"In a large ensemble of climate model simulations, we find that, as well as increasing the amount of moisture the atmosphere can hold, anthropogenic warming caused a small but significant increase in the number of January days with westerly flow, both of which increased extreme precipitation.\"",
+    "authors":"Schaller et al., (2016) Nature Climate Change, 6,  627–634",
+    "pdf":"",
+    "link":"http://www.nature.com/nclimate/journal/v6/n6/full/nclimate2927.html"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -148.710938,46.972756 ]
+    },
+    "properties": {
+    "location":"NE Pacific",
+    "type":"Oceans",
+    "impact_description":"Yes. More severe or more likely to occur",
+    "impact":"Yes",
+    "summary":"\"According to CMIP5 models, the risk of record annual mean warmth in European, northeast Pacific, and northwest Atlantic regions—as occurred in 2014—has been greatly increased by anthropogenic climate change.\"",
+    "authors":"Kam et al., (2015) Bull. Amer. Meteor. Soc., 96 (12), S61-S65",
+    "pdf":"",
+    "link":"http://journals.ametsoc.org/doi/pdf/10.1175/BAMS-ExplainingExtremeEvents2014.1"
     }
   }
 ]
