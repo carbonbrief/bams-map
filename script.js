@@ -258,7 +258,7 @@ promise.then(function(data) {
 		pointToLayer: function(feature, latlng) {
 			return L.marker(latlng, {
 				icon: naturalHeatIcon,
-				tags: ['Heat', 'Not human']
+				tags: ['Heat', 'No link']
 			}).on('dblclick', onDoubleClick);
 		},
 					onEachFeature: onEachFeature
@@ -310,7 +310,7 @@ promise.then(function(data) {
 	pointToLayer: function(feature, latlng) {
 		return L.marker(latlng, {
 			icon: unknownDryIcon,
-			tags: ['Drought', 'Unknown']
+			tags: ['Drought', 'Inconclusive']
 		}).on('dblclick', onDoubleClick);
 	},
 	onEachFeature: onEachFeature
